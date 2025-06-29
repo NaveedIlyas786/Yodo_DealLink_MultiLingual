@@ -13,7 +13,7 @@ const ReusableTable = ({ headers, data, statusColors }) => {
   const ns = useDynamicNamespace() // ✅ use the namespace from the URL
   const { t } = useTranslation([ns, 'static']) // ✅ load both main + fallback
   const currentLang = i18n.language
-  console.log('currentLang: ', currentLang)
+  // console.log('currentLang: ', currentLang)
   const [activeRowId, setActiveRowId] = useState(null)
   const actionRef = useRef(null)
 
@@ -36,7 +36,7 @@ const ReusableTable = ({ headers, data, statusColors }) => {
     console.log(`Action: ${action}, ID: ${id}`)
     setActiveRowId(id)
   }
-  console.log('activeRowId: ', activeRowId)
+  // console.log('activeRowId: ', activeRowId)
 
   return (
     <div className='overflow-auto'>

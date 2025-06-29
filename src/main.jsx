@@ -1,13 +1,20 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
-import './index.css'
+import React from 'react'
+import ReactDOM from 'react-dom/client'
 import { BrowserRouter } from 'react-router-dom'
-import { App } from './App'
+import { SidebarProvider } from './components/SidebarContext'
+import AppWithTranslation from './components/AppWithTranslation'
+import './utils/i18n'
+import './index.css'
+import ErrorBoundary from './components/ErrorBoundary'
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </StrictMode>
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <ErrorBoundary>
+      <BrowserRouter>
+        <SidebarProvider>
+          <AppWithTranslation />
+        </SidebarProvider>
+      </BrowserRouter>
+    </ErrorBoundary>
+  </React.StrictMode>
 )
