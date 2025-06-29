@@ -17,6 +17,8 @@ import UserOfferPage from './pages/userSection/UserOfferPage'
 import Users from './pages/adminSection/Users'
 import AdminOfferPage from './pages/adminSection/AdminOfferPage'
 import AdminCatgeoryPage from './pages/adminSection/AdminCatgeoryPage'
+import AdminDashboard from './pages/adminSection/AdminDashboard'
+import UserDashboard from './pages/userSection/UserDashboard'
 
 export const App = () => {
   const location = useLocation()
@@ -53,7 +55,7 @@ export const App = () => {
           />
 
           {/* Admin routes */}
-          {/* <Route path='/admin/dashboard' element={<AdminDashboard />} /> */}
+          <Route path='/admin/dashboard' element={<AdminDashboard />} />
           <Route path='/admin/offerPage' element={<AdminOfferPage />} />
           <Route path='/admin/adminCategory' element={<AdminCatgeoryPage />} />
           <Route path='/admin/users' element={<Users />} />
@@ -62,7 +64,7 @@ export const App = () => {
           <Route path='/admin/coupens' element={<CoupensPage />} />
 
           {/* User routes */}
-          {/* <Route path='/user/dashboard' element={<UserDashboard />} /> */}
+          <Route path='/user/dashboard' element={<UserDashboard />} />
           <Route path='/user/userOfferPage' element={<UserOfferPage />} />
           <Route path='/user/settings' element={<Settings />} />
           <Route path='/user/payments' element={<PaymentsPage />} />
