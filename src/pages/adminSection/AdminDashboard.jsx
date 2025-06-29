@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { lazy, Suspense, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from '../../utils/i18n'
 
@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import { Input } from '@/components/ui/input'
 
-// import RedemptionChart from '@/components/RedemptionChart'
+const ChartComponent = lazy(() => import('@/components/RedemptionChart'))
 import ProfileNotification from '@/components/ProfileNotification'
 import ReusableTable from '@/components/ReusableTable'
 
@@ -131,8 +131,9 @@ const AdminDashboard = () => {
       </div>
 
       {/* Chart */}
-      {/* <RedemptionChart /> */}
-
+      <Suspense fallback={<div>Loading Chart...</div>}>
+        <ChartComponent />
+      </Suspense>
       {/* Offers Table + Recent Activity */}
       <div className='flex bg-white rounded-[20px] p-3 gap-[20px] overflow-x-auto w-full xll:overflow-x-visible'>
         {/* Offers Table */}

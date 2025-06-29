@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { lazy, Suspense, useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from '../../utils/i18n'
 
@@ -23,6 +23,7 @@ const TrendingUp = LucideIcons.TrendingUp
 
 import '../../App.css'
 import { useDynamicNamespace } from '@/components/useDynamicNameSpace'
+const ChartComponent = lazy(() => import('../../components/RedemptionChart'))
 
 const statusColors = {
   Approved: 'bg-green-100 text-green-700',
@@ -132,7 +133,9 @@ const UserDashboard = () => {
       </div>
 
       {/* Chart */}
-      {/* <RedemptionChart /> */}
+      <Suspense fallback={<div>Loading Chart...</div>}>
+        <ChartComponent />
+      </Suspense>
 
       {/* Offers Table + Recent Activity */}
       <div className='flex bg-white rounded-[20px] p-[1px] gap-[20px] overflow-x-auto w-full xll:overflow-x-visible'>
