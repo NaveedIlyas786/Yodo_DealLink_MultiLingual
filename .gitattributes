@@ -1,0 +1,13 @@
+# Enforce LF for all text files
+* text=auto eol=lf
+
+# These files are usually binary or should not be normalized
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pdf binary
+*.woff binary
+*.woff2 binary
+*.ttf binary

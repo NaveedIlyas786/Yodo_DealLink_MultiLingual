@@ -1,0 +1,167 @@
+[
+  {
+    "id": 1,
+    "offerName": "50% Off Glow Facial",
+    "merchant": "Beauty Bliss",
+    "category": "Beauty",
+    "submittedOn": "16/08/2013",
+    "status": "Approved",
+    "views": 746,
+    "redemptions": 736,
+    "validity": "18-10-2025"
+  },
+  {
+    "id": 2,
+    "offerName": "50% Off Glow Facial",
+    "merchant": "Smile Care Dental",
+    "category": "Food",
+    "submittedOn": "16/08/2013",
+    "status": "Approved",
+    "views": 951,
+    "redemptions": 524,
+    "validity": "25-02-2026"
+  },
+  {
+    "id": 3,
+    "offerName": "Buy 1 Get 1 Hair Wash",
+    "merchant": "Beauty Bliss",
+    "category": "Fitness",
+    "submittedOn": "16/08/2013",
+    "status": "Rejected",
+    "views": 134,
+    "redemptions": 91,
+    "validity": "30-05-2026"
+  },
+  {
+    "id": 4,
+    "offerName": "50% Off Glow Facial",
+    "merchant": "Smile Care Dental",
+    "category": "Beauty",
+    "submittedOn": "16/08/2013",
+    "status": "Approved",
+    "views": 429,
+    "redemptions": 337,
+    "validity": "30-12-2025"
+  },
+  {
+    "id": 5,
+    "offerName": "Buy 1 Get 1 Hair Wash",
+    "merchant": "Beauty Bliss",
+    "category": "Food",
+    "submittedOn": "16/08/2013",
+    "status": "Rejected",
+    "views": 224,
+    "redemptions": 70,
+    "validity": "27-01-2026"
+  },
+  {
+    "id": 6,
+    "offerName": "50% Off Glow Facial",
+    "merchant": "Smile Care Dental",
+    "category": "Food",
+    "submittedOn": "16/08/2013",
+    "status": "Pending",
+    "views": 149,
+    "redemptions": 58,
+    "validity": "06-08-2026"
+  },
+  {
+    "id": 7,
+    "offerName": "Buy 1 Get 1 Hair Wash",
+    "merchant": "Beauty Bliss",
+    "category": "Beauty",
+    "submittedOn": "16/08/2013",
+    "status": "Approved",
+    "views": 974,
+    "redemptions": 633,
+    "validity": "14-09-2025"
+  },
+  {
+    "id": 8,
+    "offerName": "Buy 1 Get 1 Smoothie",
+    "merchant": "Smile Care Dental",
+    "category": "Food",
+    "submittedOn": "16/08/2013",
+    "status": "Rejected",
+    "views": 534,
+    "redemptions": 506,
+    "validity": "01-04-2026"
+  },
+  {
+    "id": 9,
+    "offerName": "50% Off Glow Facial",
+    "merchant": "Beauty Bliss",
+    "category": "Fitness",
+    "submittedOn": "16/08/2013",
+    "status": "Approved",
+    "views": 801,
+    "redemptions": 605,
+    "validity": "18-09-2025"
+  },
+  {
+    "id": 10,
+    "offerName": "Free Dental Checkup",
+    "merchant": "Smile Care Dental",
+    "category": "Health",
+    "submittedOn": "16/08/2013",
+    "status": "Pending",
+    "views": 804,
+    "redemptions": 566,
+    "validity": "17-03-2026"
+  },
+  {
+    "id": 11,
+    "offerName": "50% Off Glow Facial",
+    "merchant": "Beauty Bliss",
+    "category": "Health",
+    "submittedOn": "16/08/2013",
+    "status": "Approved",
+    "views": 899,
+    "redemptions": 818,
+    "validity": "16-02-2026"
+  },
+  {
+    "id": 12,
+    "offerName": "20% Off Pedicure",
+    "merchant": "Smile Care Dental",
+    "category": "Wellness",
+    "submittedOn": "16/08/2013",
+    "status": "Rejected",
+    "views": 615,
+    "redemptions": 40,
+    "validity": "24-12-2025"
+  },
+  {
+    "id": 13,
+    "offerName": "50% Off Glow Facial",
+    "merchant": "Beauty Bliss",
+    "category": "Wellness",
+    "submittedOn": "16/08/2013",
+    "status": "Approved",
+    "views": 599,
+    "redemptions": 496,
+    "validity": "22-11-2025"
+  },
+  {
+    "id": 14,
+    "offerName": "Free Hair Styling",
+    "merchant": "Hair Studio",
+    "category": "Beauty",
+    "submittedOn": "16/08/2013",
+    "status": "Pending",
+    "views": 751,
+    "redemptions": 676,
+    "validity": "31-01-2026"
+  },
+  {
+    "id": 15,
+    "offerName": "50% Off Glow Facial",
+    "merchant": "Beauty Bliss",
+    "category": "Food",
+    "submittedOn": "16/08/2013",
+    "status": "Approved",
+    "views": 281,
+    "redemptions": 240,
+    "validity": "10-06-2026"
+  }
+]

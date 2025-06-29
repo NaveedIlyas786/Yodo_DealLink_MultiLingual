@@ -1,0 +1,155 @@
+[
+  {
+    "id": 1,
+    "name": "Ali Raza",
+    "role": "Admin",
+    "email": "ali.raza@example.com",
+    "phone": "03001234567",
+    "joinOn": "2023-01-15",
+    "actions": ["edit", "delete"]
+  },
+  {
+    "id": 2,
+    "name": "Sara Khan",
+    "role": "Editor",
+    "email": "sara.khan@example.com",
+    "phone": "03123456789",
+    "joinOn": "2023-02-20",
+    "actions": ["edit"]
+  },
+  {
+    "id": 3,
+    "name": "Usman Tariq",
+    "role": "Viewer",
+    "email": "usman.tariq@example.com",
+    "phone": "03211223344",
+    "joinOn": "2023-03-05",
+    "actions": []
+  },
+  {
+    "id": 4,
+    "name": "Hira Sheikh",
+    "role": "Editor",
+    "email": "hira.sheikh@example.com",
+    "phone": "03334445566",
+    "joinOn": "2023-03-22",
+    "actions": ["edit", "delete"]
+  },
+  {
+    "id": 5,
+    "name": "Zain Ul Abideen",
+    "role": "Admin",
+    "email": "zain.abideen@example.com",
+    "phone": "03455667788",
+    "joinOn": "2023-04-12",
+    "actions": ["edit", "delete"]
+  },
+  {
+    "id": 6,
+    "name": "Ayesha Iqbal",
+    "role": "Viewer",
+    "email": "ayesha.iqbal@example.com",
+    "phone": "03007894561",
+    "joinOn": "2023-05-10",
+    "actions": []
+  },
+  {
+    "id": 7,
+    "name": "Bilal Ahmed",
+    "role": "Editor",
+    "email": "bilal.ahmed@example.com",
+    "phone": "03002223344",
+    "joinOn": "2023-06-01",
+    "actions": ["edit"]
+  },
+  {
+    "id": 8,
+    "name": "Nida Zafar",
+    "role": "Admin",
+    "email": "nida.zafar@example.com",
+    "phone": "03003334455",
+    "joinOn": "2023-06-15",
+    "actions": ["edit", "delete"]
+  },
+  {
+    "id": 9,
+    "name": "Tariq Jameel",
+    "role": "Viewer",
+    "email": "tariq.jameel@example.com",
+    "phone": "03223334455",
+    "joinOn": "2023-07-03",
+    "actions": []
+  },
+  {
+    "id": 10,
+    "name": "Fatima Zahra",
+    "role": "Editor",
+    "email": "fatima.zahra@example.com",
+    "phone": "03119998877",
+    "joinOn": "2023-07-25",
+    "actions": ["edit"]
+  },
+  {
+    "id": 11,
+    "name": "Shahbaz Ali",
+    "role": "Admin",
+    "email": "shahbaz.ali@example.com",
+    "phone": "03440001122",
+    "joinOn": "2023-08-15",
+    "actions": ["edit", "delete"]
+  },
+  {
+    "id": 12,
+    "name": "Maham Riaz",
+    "role": "Viewer",
+    "email": "maham.riaz@example.com",
+    "phone": "03334441122",
+    "joinOn": "2023-09-05",
+    "actions": []
+  },
+  {
+    "id": 13,
+    "name": "Adnan Siddiqui",
+    "role": "Editor",
+    "email": "adnan.siddiqui@example.com",
+    "phone": "03453334455",
+    "joinOn": "2023-09-30",
+    "actions": ["edit"]
+  },
+  {
+    "id": 14,
+    "name": "Sana Malik",
+    "role": "Admin",
+    "email": "sana.malik@example.com",
+    "phone": "03005554433",
+    "joinOn": "2023-10-12",
+    "actions": ["edit", "delete"]
+  },
+  {
+    "id": 15,
+    "name": "Rizwan Butt",
+    "role": "Viewer",
+    "email": "rizwan.butt@example.com",
+    "phone": "03114445566",
+    "joinOn": "2023-11-01",
+    "actions": []
+  },
+  {
+    "id": 16,
+    "name": "Iqra Saeed",
+    "role": "Editor",
+    "email": "iqra.saeed@example.com",
+    "phone": "03225556677",
+    "joinOn": "2023-12-10",
+    "actions": ["edit"]
+  },
+  {
+    "id": 17,
+    "name": "Yasir Mehmood",
+    "role": "Admin",
+    "email": "yasir.mehmood@example.com",
+    "phone": "03331112233",
+    "joinOn": "2024-01-05",
+    "actions": ["edit", "delete"]
+  }
+]

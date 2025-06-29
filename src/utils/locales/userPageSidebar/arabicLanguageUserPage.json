@@ -1,0 +1,29 @@
+{
+  "name": "الاسم",
+  "role": "الدور",
+  "joinOn": "تاريخ الانضمام",
+  "email": "البريد الإلكتروني",
+  "phone": "رقم الهاتف",
+  "Offers": "العروض",
+  "Search": "بحث",
+  "Users": "المستخدمون",
+  "Actions": "إجراءات",
+  "roles": {
+    "Admin": "مسؤول",
+    "Editor": "محرر",
+    "Viewer": "مشاهد"
+  },
+  "actions": {
+    "edit": "تعديل",
+    "delete": "حذف",
+    "repost": "إعادة النشر"
+  },
+  "noActions": "لا توجد إجراءات",
+  "Filters": "الفلاتر",
+  "Next": "التالي",
+  "Page": "الصفحة",
+  "of": "من",
+  "Previous": "السابق",
+  "Hey! Arlene McCoy": "مرحبًا! أرلين ماكوي",
+  "Here’s an overview of platform activity.": "إليك نظرة عامة على نشاط المنصة."
+}

@@ -1,0 +1,37 @@
+{
+  "offerName": "Offer Name",
+  "status": "status",
+  "statuses": {
+    "Approved": "Approved",
+    "Pending": "Pending",
+    "Rejected": "Rejected"
+  },
+  "Actions": "Actions",
+  "actions": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "repost": "Repost"
+  },
+  "offerNames": {
+    "50% Off Glow Facial": "50% Off Glow Facial",
+    "Buy 1 Get 1 Hair Wash": "Buy 1 Get 1 Hair Wash",
+    "20% Off Manicure": "20% Off Manicure",
+    "30% Off Braces Consultation": "30% Off Braces Consultation",
+    "Buy 1 Get 1 Smoothie": "Buy 1 Get 1 Smoothie",
+    "Free Dental Checkup": "Free Dental Checkup"
+  },
+  "Search": "Search",
+  "Filters": "Filters",
+  "Next": "Next",
+  "views": "views",
+  "redemptions": "redemptions",
+  "convertionRate": "Convertion Rate",
+  "submittedOn": "Submitted On",
+  "category": "Category",
+  "categories": {
+    "Beauty": "Beauty",
+    "Food": "Food",
+    "Fitness": "Fitness"
+  },
+  "merchant": "Merchant"
+}

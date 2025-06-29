@@ -1,0 +1,53 @@
+{
+  "offerName": "اسم العرض",
+  "merchant": "التاجر",
+  "category": "الفئة",
+  "submittedOn": "تاريخ الإرسال",
+  "status": "الحالة",
+  "offerNames": {
+    "Summer Deal": "عرض الصيف",
+    "Winter Sale": "تخفيضات الشتاء",
+    "20% Off Manicure": "خصم 20% على المانكير",
+    "50% Off Glow Facial": "خصم 50% على تنظيف البشرة",
+    "Eyebrow Threading Free": "خيط الحواجب مجانًا",
+    "Buy 1 Get 1 Hair Wash": "اشترِ غسيل شعر واحصل على الآخر مجانًا",
+    "Unknown": "غير معروف"
+  },
+  "merchants": {
+    "Beauty Bliss": "بيوتي بليس",
+    "Smile Care Dental": "عيادة سمايل كير",
+    "Glamour Spot": "سبوت جلو"
+  },
+  "categories": {
+    "Beauty": "الجمال",
+    "Food": "الطعام",
+    "Fitness": "اللياقة"
+  },
+  "statuses": {
+    "Approved": "تمت الموافقة",
+    "Pending": "قيد الانتظار",
+    "Rejected": "مرفوض"
+  },
+  "Actions": "إجراءات",
+  "actions": {
+    "edit": "تعديل",
+    "delete": "حذف",
+    "repost": "إعادة النشر"
+  },
+  "noActions": "لا توجد إجراءات",
+  "roles": {
+    "Admin": "مسؤول",
+    "Editor": "محرر",
+    "Viewer": "مشاهد"
+  },
+
+  "Offers": "العروض",
+  "Search": "بحث",
+  "Filters": "الفلاتر",
+  "Next": "التالي",
+  "Page": "الصفحة",
+  "of": "من",
+  "Previous": "السابق",
+  "Hey! Arlene McCoy": "مرحبًا! أرلين ماكوي",
+  "Here’s an overview of platform activity.": "إليك نظرة عامة على نشاط المنصة."
+}

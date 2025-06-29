@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Alice Johnson",
+    "message": "signed up as a consumer",
+    "timeAgo": "2 hrs ago",
+    "image": "https://randomuser.me/api/portraits/women/1.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Offer Approved",
+    "message": "Offer #456 approved for Bliss Beauty.",
+    "timeAgo": "2 hrs ago",
+    "image": "https://randomuser.me/api/portraits/men/2.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Carol Williams",
+    "message": "Merchant updated offer #452 (Price changed).",
+    "timeAgo": "2 hrs ago",
+    "image": "https://randomuser.me/api/portraits/women/3.jpg"
+  },
+  {
+    "id": 4,
+    "name": "James Smith",
+    "message": "signed up as a merchant",
+    "timeAgo": "1 hr ago",
+    "image": "https://randomuser.me/api/portraits/men/4.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Offer Rejected",
+    "message": "Offer #457 rejected for Smile Care.",
+    "timeAgo": "3 hrs ago",
+    "image": "https://randomuser.me/api/portraits/men/5.jpg"
+  }
+]

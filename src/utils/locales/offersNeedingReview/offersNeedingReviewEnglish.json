@@ -1,0 +1,39 @@
+{
+  "offerTitle": "Offer Title",
+  "merchant": "merchant",
+  "category": "category",
+  "status": "status",
+  "merchants": {
+    "Beauty Bliss": "Beauty Bliss",
+    "Smile Care Dental": "Smile Care Dental",
+    "Glamour Spot": "Glamour Spot"
+  },
+  "categories": {
+    "Beauty": "Beauty",
+    "Food": "Food",
+    "Fitness": "Fitness"
+  },
+  "statuses": {
+    "Approved": "Approved",
+    "Pending": "Pending",
+    "Rejected": "Rejected"
+  },
+  "Actions": "Actions",
+  "actions": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "repost": "Repost"
+  },
+  "offerTitles": {
+    "50% Off Glow Facial": "50% Off Glow Facial",
+    "Buy 1 Get 1 Hair Wash": "Buy 1 Get 1 Hair Wash",
+    "20% Off Manicure": "20% Off Manicure",
+    "30% Off Braces Consultation": "30% Off Braces Consultation",
+    "Buy 1 Get 1 Smoothie": "Buy 1 Get 1 Smoothie",
+    "Free Dental Checkup": "Free Dental Checkup"
+  },
+  "Search": "Search",
+  "Filters": "Filters",
+  "Next": "Next",
+  "Previous": "Previous"
+}

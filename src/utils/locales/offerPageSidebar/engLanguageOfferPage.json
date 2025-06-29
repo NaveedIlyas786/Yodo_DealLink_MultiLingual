@@ -1,0 +1,52 @@
+{
+  "offerName": "Offer Name",
+  "merchant": "Merchant",
+  "category": "Category",
+  "submittedOn": "Submitted On",
+  "status": "Status",
+
+  "offerNames": {
+    "Summer Deal": "Summer Deal",
+    "Winter Sale": "Winter Sale",
+    "Unknown": "Unknown",
+    "20% Off Manicure": "20% Off Manicure",
+    "50% Off Glow Facial": "50% Off Glow Facial",
+    "Eyebrow Threading Free": "Eyebrow Threading Free",
+    "Buy 1 Get 1 Hair Wash": "Buy 1 Get 1 Hair Wash"
+  },
+
+  "merchants": {
+    "Beauty Bliss": "Beauty Bliss",
+    "Smile Care Dental": "Smile Care Dental",
+    "Glamour Spot": "Glamour Spot"
+  },
+  "categories": {
+    "Beauty": "Beauty",
+    "Food": "Food",
+    "Fitness": "Fitness"
+  },
+  "statuses": {
+    "Approved": "Approved",
+    "Pending": "Pending",
+    "Rejected": "Rejected"
+  },
+  "Actions": "Actions",
+  "actions": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "repost": "Repost"
+  },
+  "noActions": "No Actions",
+  "roles": {
+    "Admin": "Admin",
+    "Editor": "Editor",
+    "Viewer": "Viewer"
+  },
+
+  "Search": "Search",
+  "Filters": "Filters",
+  "Next": "Next",
+  "Previous": "Previous",
+  "Hey! Arlene McCoy": "Hey! Arlene McCoy",
+  "Here’s an overview of platform activity.": "Here’s an overview of platform activity."
+}

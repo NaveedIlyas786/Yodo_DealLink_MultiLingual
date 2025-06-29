@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "paymentId": 24334,
+    "date": "12-08-2025",
+    "amount": 2434,
+    "method": "Credit Card",
+    "status": "Completed"
+  },
+  {
+    "id": 2,
+    "paymentId": 24335,
+    "date": "15-08-2025",
+    "amount": 1500,
+    "method": "Bank Transfer",
+    "status": "Pending"
+  },
+  {
+    "id": 3,
+    "paymentId": 24336,
+    "date": "01-09-2025",
+    "amount": 3200,
+    "method": "Wallet",
+    "status": "Completed"
+  },
+  {
+    "id": 4,
+    "paymentId": 24337,
+    "date": "22-07-2025",
+    "amount": 875,
+    "method": "PayPal",
+    "status": "Failed"
+  },
+  {
+    "id": 5,
+    "paymentId": 24338,
+    "date": "30-06-2025",
+    "amount": 1999,
+    "method": "Credit Card",
+    "status": "Completed"
+  },
+  {
+    "id": 6,
+    "paymentId": 24339,
+    "date": "05-07-2025",
+    "amount": 4200,
+    "method": "Bank Transfer",
+    "status": "Refunded"
+  },
+  {
+    "id": 7,
+    "paymentId": 24340,
+    "date": "19-08-2025",
+    "amount": 2750,
+    "method": "Wallet",
+    "status": "Completed"
+  },
+  {
+    "id": 8,
+    "paymentId": 24341,
+    "date": "25-09-2025",
+    "amount": 1100,
+    "method": "Cash",
+    "status": "Pending"
+  },
+  {
+    "id": 9,
+    "paymentId": 24342,
+    "date": "08-10-2025",
+    "amount": 530,
+    "method": "PayPal",
+    "status": "Completed"
+  },
+  {
+    "id": 10,
+    "paymentId": 24343,
+    "date": "14-11-2025",
+    "amount": 3050,
+    "method": "Credit Card",
+    "status": "Failed"
+  },
+  {
+    "id": 11,
+    "paymentId": 24344,
+    "date": "02-12-2025",
+    "amount": 1625,
+    "method": "Bank Transfer",
+    "status": "Completed"
+  },
+  {
+    "id": 12,
+    "paymentId": 24345,
+    "date": "28-09-2025",
+    "amount": 990,
+    "method": "Wallet",
+    "status": "Refunded"
+  },
+  {
+    "id": 13,
+    "paymentId": 24346,
+    "date": "06-10-2025",
+    "amount": 2150,
+    "method": "Cash",
+    "status": "Completed"
+  },
+  {
+    "id": 14,
+    "paymentId": 24347,
+    "date": "17-11-2025",
+    "amount": 780,
+    "method": "Credit Card",
+    "status": "Pending"
+  },
+  {
+    "id": 15,
+    "paymentId": 24348,
+    "date": "23-12-2025",
+    "amount": 4500,
+    "method": "Bank Transfer",
+    "status": "Completed"
+  }
+]

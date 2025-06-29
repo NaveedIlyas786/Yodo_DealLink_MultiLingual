@@ -1,0 +1,41 @@
+{
+  "offerTitle": "عنوان العرض",
+  "merchant": "التاجر",
+  "category": "الفئة",
+  "status": "الحالة",
+  "statuses": {
+    "Approved": "مقبول",
+    "Pending": "قيد الانتظار",
+    "Rejected": "مرفوض"
+  },
+  "Actions": "الإجراءات",
+  "actions": {
+    "edit": "تعديل",
+    "delete": "حذف",
+    "repost": "إعادة النشر"
+  },
+  "merchants": {
+    "Beauty Bliss": "بيوتي بليس",
+    "Smile Care Dental": "عيادة سمايل كير",
+    "Glamour Spot": "جلامور سبوت"
+  },
+  "categories": {
+    "Beauty": "جمال",
+    "Food": "طعام",
+    "Fitness": "لياقة"
+  },
+  "offerTitles": {
+    "50% Off Glow Facial": "خصم 50% على تنظيف البشرة",
+    "Buy 1 Get 1 Hair Wash": "اشترِ غسيل شعر واحصل على الآخر مجانًا",
+    "20% Off Manicure": "خصم 20% على المانكير",
+    "30% Off Braces Consultation": "خصم 30% على استشارة تقويم الأسنان",
+    "Buy 1 Get 1 Smoothie": "اشترِ عصيرًا واحصل على الآخر مجانًا",
+    "Free Dental Checkup": "فحص أسنان مجاني"
+  },
+  "Search": "بحث",
+  "Filters": "الفلاتر",
+  "Next": "التالي",
+  "Page": "الصفحة",
+  "of": "من",
+  "Previous": "السابق"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "Name",
+  "role": "Role",
+  "joinOn": "Joined On",
+  "email": "Email",
+  "phone": "Phone",
+  "Offers": "Offers",
+  "Search": "Search",
+  "Users": "Users",
+  "Actions": "Actions",
+  "roles": {
+    "Admin": "Admin",
+    "Editor": "Editor",
+    "Viewer": "Viewer"
+  },
+  "actions": {
+    "edit": "Edit",
+    "delete": "Delete",
+    "repost": "Repost"
+  },
+  "noActions": "No actions available",
+  "Filters": "Filters",
+  "Next": "Next",
+  "Page": "Page",
+  "of": "of",
+  "Previous": "Previous",
+  "Hey! Arlene McCoy": "Hey! Arlene McCoy",
+  "Here’s an overview of platform activity.": "Here’s an overview of platform activity."
+}

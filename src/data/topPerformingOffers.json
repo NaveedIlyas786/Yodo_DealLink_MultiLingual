@@ -1,0 +1,122 @@
+[
+  {
+    "id": 1,
+    "offerName": "50% Off Glow Facial",
+    "views": 214,
+    "redemptions": 33,
+    "convertionRate": 15.4,
+    "status": "Approved"
+  },
+  {
+    "id": 2,
+    "offerName": "Buy 1 Get 1 Hair Wash",
+    "views": 214,
+    "redemptions": 99,
+    "convertionRate": 46.3,
+    "status": "Approved"
+  },
+  {
+    "id": 3,
+    "offerName": "20% Off Manicure",
+    "views": 214,
+    "redemptions": 44,
+    "convertionRate": 20.6,
+    "status": "Rejected"
+  },
+  {
+    "id": 4,
+    "offerName": "Free Skin Consultation",
+    "views": 214,
+    "redemptions": 98,
+    "convertionRate": 45.8,
+    "status": "Approved"
+  },
+  {
+    "id": 5,
+    "offerName": "30% Off Braces Consultation",
+    "views": 214,
+    "redemptions": 32,
+    "convertionRate": 15.0,
+    "status": "Approved"
+  },
+  {
+    "id": 6,
+    "offerName": "10% Off Hair Color",
+    "views": 214,
+    "redemptions": 90,
+    "convertionRate": 42.1,
+    "status": "Pending"
+  },
+  {
+    "id": 7,
+    "offerName": "Free Zumba Trial",
+    "views": 214,
+    "redemptions": 32,
+    "convertionRate": 15.0,
+    "status": "Approved"
+  },
+  {
+    "id": 8,
+    "offerName": "Buy 1 Get 1 Smoothie",
+    "views": 214,
+    "redemptions": 85,
+    "convertionRate": 39.7,
+    "status": "Rejected"
+  },
+  {
+    "id": 9,
+    "offerName": "25% Off Full Body Massage",
+    "views": 214,
+    "redemptions": 34,
+    "convertionRate": 15.9,
+    "status": "Approved"
+  },
+  {
+    "id": 10,
+    "offerName": "Free Dental Checkup",
+    "views": 214,
+    "redemptions": 77,
+    "convertionRate": 36.0,
+    "status": "Pending"
+  },
+  {
+    "id": 11,
+    "offerName": "15% Off Protein Shakes",
+    "views": 214,
+    "redemptions": 56,
+    "convertionRate": 26.2,
+    "status": "Approved"
+  },
+  {
+    "id": 12,
+    "offerName": "20% Off Pedicure",
+    "views": 214,
+    "redemptions": 76,
+    "convertionRate": 35.5,
+    "status": "Rejected"
+  },
+  {
+    "id": 13,
+    "offerName": "Yoga Class - First Week Free",
+    "views": 214,
+    "redemptions": 22,
+    "convertionRate": 10.3,
+    "status": "Approved"
+  },
+  {
+    "id": 14,
+    "offerName": "Free Hair Styling",
+    "views": 214,
+    "redemptions": 18,
+    "convertionRate": 8.4,
+    "status": "Pending"
+  },
+  {
+    "id": 15,
+    "offerName": "Buy 2 Get 1 Meal Free",
+    "views": 214,
+    "redemptions": 23,
+    "convertionRate": 10.7,
+    "status": "Approved"
+  }
+]

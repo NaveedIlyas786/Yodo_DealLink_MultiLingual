@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "offerTitle": "50% Off Glow Facial",
+    "merchant": "Beauty Bliss",
+    "category": "Beauty",
+    "status": "Approved"
+  },
+  {
+    "id": 2,
+    "offerTitle": "Buy 1 Get 1 Hair Wash",
+    "merchant": "Smile Care Dental",
+    "category": "Food",
+    "status": "Approved"
+  },
+  {
+    "id": 3,
+    "offerTitle": "20% Off Manicure",
+    "merchant": "Beauty Bliss",
+    "category": "Fitness",
+    "status": "Rejected"
+  },
+  {
+    "id": 4,
+    "offerTitle": "Free Skin Consultation",
+    "merchant": "Glow Up Clinic",
+    "category": "Beauty",
+    "status": "Approved"
+  },
+  {
+    "id": 5,
+    "offerTitle": "30% Off Braces Consultation",
+    "merchant": "Smile Care Dental",
+    "category": "Dental",
+    "status": "Approved"
+  },
+  {
+    "id": 6,
+    "offerTitle": "10% Off Hair Color",
+    "merchant": "Style Studio",
+    "category": "Beauty",
+    "status": "Pending"
+  },
+  {
+    "id": 7,
+    "offerTitle": "Free Zumba Trial",
+    "merchant": "FitZone Gym",
+    "category": "Fitness",
+    "status": "Approved"
+  },
+  {
+    "id": 8,
+    "offerTitle": "Buy 1 Get 1 Smoothie",
+    "merchant": "Health Shakes Bar",
+    "category": "Food",
+    "status": "Rejected"
+  },
+  {
+    "id": 9,
+    "offerTitle": "25% Off Full Body Massage",
+    "merchant": "Relax Spa",
+    "category": "Beauty",
+    "status": "Approved"
+  },
+  {
+    "id": 10,
+    "offerTitle": "Free Dental Checkup",
+    "merchant": "Smile Care Dental",
+    "category": "Dental",
+    "status": "Pending"
+  },
+  {
+    "id": 11,
+    "offerTitle": "15% Off Protein Shakes",
+    "merchant": "Muscle Fuel",
+    "category": "Food",
+    "status": "Approved"
+  },
+  {
+    "id": 12,
+    "offerTitle": "20% Off Pedicure",
+    "merchant": "Beauty Bliss",
+    "category": "Beauty",
+    "status": "Rejected"
+  },
+  {
+    "id": 13,
+    "offerTitle": "Yoga Class - First Week Free",
+    "merchant": "Peaceful Yoga",
+    "category": "Fitness",
+    "status": "Approved"
+  },
+  {
+    "id": 14,
+    "offerTitle": "Free Hair Styling",
+    "merchant": "Style Studio",
+    "category": "Beauty",
+    "status": "Pending"
+  },
+  {
+    "id": 15,
+    "offerTitle": "Buy 2 Get 1 Meal Free",
+    "merchant": "Fit Bites Café",
+    "category": "Food",
+    "status": "Approved"
+  }
+]
