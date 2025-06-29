@@ -12,7 +12,7 @@ import Sidebar from './components/Sidebar'
 import NotFoundPage from './components/NotFoundPage'
 import Settings from './pages/allUserRolesAccess/Settings'
 import PaymentsPage from './pages/allUserRolesAccess/PaymentsPage'
-import CoupensPage from './pages/allUserRolesAccess/CoupensPage'
+import CouponsPage from './pages/allUserRolesAccess/CouponsPage'
 import UserOfferPage from './pages/userSection/UserOfferPage'
 import Users from './pages/adminSection/Users'
 import AdminOfferPage from './pages/adminSection/AdminOfferPage'
@@ -61,14 +61,14 @@ export const App = () => {
           <Route path='/admin/users' element={<Users />} />
           <Route path='/admin/settings' element={<Settings />} />
           <Route path='/admin/payments' element={<PaymentsPage />} />
-          <Route path='/admin/coupens' element={<CoupensPage />} />
+          <Route path='/admin/Coupons' element={<CouponsPage />} />
 
           {/* User routes */}
           <Route path='/user/dashboard' element={<UserDashboard />} />
           <Route path='/user/userOfferPage' element={<UserOfferPage />} />
           <Route path='/user/settings' element={<Settings />} />
           <Route path='/user/payments' element={<PaymentsPage />} />
-          <Route path='/user/coupens' element={<CoupensPage />} />
+          <Route path='/user/Coupons' element={<CouponsPage />} />
 
           {/* Catch-all */}
           <Route path='*' element={<NotFoundPage />} />

@@ -22,7 +22,7 @@ const Settings = () => {
   return (
     <div className='min-h-screen overflow-y-auto flex flex-col flex-1 py-[15px] bg-gray-50'>
       <ProfileNotification />
-      <h1 className='text-3xl ml-[40px] font-bold text-black mb-4'>
+      <h1 className='text-lg ml-[40px] kumbh_sans_25 text-black mb-4'>
         {t('Settings')}
       </h1>
 
@@ -31,9 +31,9 @@ const Settings = () => {
           onClick={() => handleaActiveTab('profileSetting')}
           className={`${
             activeTab === 'profileSetting'
-              ? 'bg-[#17642F] text-white'
-              : 'bg-none text-black hover:bg-[#69bb68] hover:text-white'
-          } border-[1px] border-[#25252526] py-2 px-4 sm:py-[15px] sm:px-[24px] text-sm sm:text-base font-semibold cursor-pointer rounded-full`}
+              ? 'bg-[#17642F] text-white kumbh_sans_sami_bold'
+              : 'bg-none text-black hover:bg-[#69bb68] kumbh_sans_normal_bold hover:text-white'
+          } border-[1px]  border-[#25252526] py-2 px-4 sm:py-[15px] sm:px-[24px]  cursor-pointer rounded-full`}
         >
           {t('Profile Settings')}
         </button>
@@ -41,9 +41,9 @@ const Settings = () => {
           onClick={() => handleaActiveTab('systemSetting')}
           className={`${
             activeTab === 'systemSetting'
-              ? 'bg-[#17642F] text-white'
-              : 'bg-none text-black hover:bg-[#69bb68] hover:text-white'
-          } border-[1px] border-[#25252526] py-2 px-4 sm:py-[15px] sm:px-[24px] text-sm sm:text-base font-semibold cursor-pointer rounded-full`}
+              ? 'bg-[#17642F] text-white kumbh_sans_sami_bold'
+              : 'bg-none text-black hover:bg-[#69bb68] kumbh_sans_normal_bold hover:text-white'
+          } border-[1px]  border-[#25252526] py-2 px-4 sm:py-[15px] sm:px-[24px]  cursor-pointer rounded-full`}
         >
           {t('System Settings')}
         </button>
@@ -51,15 +51,15 @@ const Settings = () => {
           onClick={() => handleaActiveTab('changePasword')}
           className={`${
             activeTab === 'changePasword'
-              ? 'bg-[#17642F] text-white'
-              : 'bg-none text-black hover:bg-[#69bb68] hover:text-white'
-          } border-[1px] border-[#25252526] py-2 px-4 sm:py-[15px] sm:px-[24px] text-sm sm:text-base font-semibold cursor-pointer rounded-full`}
+              ? 'bg-[#17642F] text-white kumbh_sans_sami_bold'
+              : 'bg-none text-black hover:bg-[#69bb68] kumbh_sans_normal_bold hover:text-white'
+          } border-[1px]  border-[#25252526] py-2 px-4 sm:py-[15px] sm:px-[24px]  cursor-pointer rounded-full`}
         >
           {t('Change Password')}
         </button>
       </div>
 
-      <div className='flex mt-[32px] ml-0 lg:ml-[40px]'>
+      <div className='flex mt-[25px] ml-0 lg:ml-[40px]'>
         {activeTab === 'profileSetting' && <ProfileSettings />}
         {activeTab === 'systemSetting' && <SystemSettings />}
         {activeTab === 'changePasword' && <ChangePassword />}

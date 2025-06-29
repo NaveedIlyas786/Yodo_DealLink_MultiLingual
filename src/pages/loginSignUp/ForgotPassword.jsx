@@ -22,27 +22,27 @@ const ForgotPassword = () => {
       {/* Form Container */}
       <div className='relative z-10 max-w-2xl min-h-[90vh] bg-white min-w-[80%] lg:min-w-[49.86%] shadow-lg px-[30px] lg:px-[49px] py-[30px] rounded-2xl '>
         {/* Logo */}
-        <div className='flex justify-center mb-[70px]'>
+        <div className='flex justify-center mb-[50px]'>
           <img src={dealLinkLogo} alt='DealLink' className='h-10' />
         </div>
-        <h2 className='text-center text-2xl font-bold text-gray-800 mb-[30px]'>
+        <h2 className='text-center kumbh_sans_bold text-gray-800 mb-[15px]'>
           Forget Password
         </h2>
         <form className='flex flex-col gap-[20px]'>
           <div className='flex-1'>
-            <label className='block text-sm font-medium text-gray-700'>
+            <label className='block text-sm kumbh_sans_sami_bold text-gray-700'>
               Email Address
             </label>
             <input
               type='email'
               placeholder='Enter your Email'
-              className='w-full mt-1 px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+              className='w-full mt-1 px-4 py-[10px] Inter_normal border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
             />
           </div>
 
           <button
             type='submit'
-            className='bg-gradient-to-r w-full mt-[15px] cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[7px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
+            className='bg-gradient-to-r w-full poppins_normal_bold cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[19px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
           >
             Submit
           </button>

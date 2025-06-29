@@ -108,7 +108,7 @@ const Sidebar = ({ role }) => {
             <li>
               <Link
                 to={`/${role}/offerPage`}
-                className={`flex items-center gap-2 transition ${
+                className={`flex items-center Inter_bold gap-2 transition ${
                   isActive(`/${role}/offerPage`) ||
                   isActive(`/${role}/offerPage/createnewOffer`)
                     ? 'bg-[#17642f] text-[#ffffff] font-bold'
@@ -126,7 +126,7 @@ const Sidebar = ({ role }) => {
             <li>
               <Link
                 to={`/${role}/adminCategory`}
-                className={`flex items-center gap-2 transition ${
+                className={`flex items-center Inter_bold gap-2 transition ${
                   isActive(`/${role}/adminCategory`) ||
                   isActive(`/${role}/adminCategory/createNewCategory`)
                     ? 'bg-[#17642f] text-[#ffffff] font-bold'
@@ -146,7 +146,7 @@ const Sidebar = ({ role }) => {
             <li>
               <Link
                 to={`/${role}/users`}
-                className={`flex items-center gap-2 transition ${
+                className={`flex items-center Inter_bold gap-2 transition ${
                   isActive(`/${role}/users`)
                     ? 'bg-[#17642f] text-[#ffffff] font-bold'
                     : 'text-gray-700 hover:text-[#FE7D13]'
@@ -168,11 +168,11 @@ const Sidebar = ({ role }) => {
             <li>
               <Link
                 to={`/${role}/userOfferPage`}
-                className={`flex items-center gap-2 transition ${
+                className={`flex items-center Inter_bold gap-2 transition ${
                   isActive(`/${role}/userOfferPage`) ||
                   isActive(`/${role}/userOfferPage/createnewOffer`)
-                    ? 'bg-[#17642f] text-[#ffffff] font-bold'
-                    : 'text-gray-700 hover:text-[#FE7D13]'
+                    ? 'bg-[#17642F] text-[#ffffff] font-bold'
+                    : 'text-gray-700  hover:text-[#FE7D13]'
                 }`}
               >
                 <BadgePercent className='w-7 h-5' />
@@ -188,9 +188,9 @@ const Sidebar = ({ role }) => {
 
         <li>
           <Link
-            to={`/${role}/coupens`}
-            className={`flex items-center gap-2 transition ${
-              isActive(`/${role}/coupens`)
+            to={`/${role}/Coupons`}
+            className={`flex items-center Inter_bold gap-2 transition ${
+              isActive(`/${role}/Coupons`)
                 ? 'bg-[#17642f] text-[#ffffff] font-bold'
                 : 'text-gray-700 hover:text-[#FE7D13]'
             }`}
@@ -198,7 +198,7 @@ const Sidebar = ({ role }) => {
             <Ticket className='w-7 h-5' />
             {openSidebar && (
               <span className='text-[16px]'>
-                {t(`Coupens`, { ns: 'static' })}
+                {t(`Coupons`, { ns: 'static' })}
               </span>
             )}
           </Link>
@@ -206,7 +206,7 @@ const Sidebar = ({ role }) => {
         <li>
           <Link
             to={`/${role}/payments`}
-            className={`flex items-center gap-2 transition ${
+            className={`flex items-center Inter_bold gap-2 transition ${
               isActive(`/${role}/payments`)
                 ? 'bg-[#17642f] text-[#ffffff] font-bold'
                 : 'text-gray-700 hover:text-[#FE7D13]'
@@ -223,7 +223,7 @@ const Sidebar = ({ role }) => {
         <li>
           <Link
             to={`/${role}/settings`}
-            className={`flex items-center gap-2 transition ${
+            className={`flex items-center Inter_bold  gap-2 transition ${
               isActive(`/${role}/settings`)
                 ? 'bg-[#17642f] text-[#ffffff] font-bold'
                 : 'text-gray-700 hover:text-[#FE7D13]'
@@ -243,9 +243,9 @@ const Sidebar = ({ role }) => {
       {/* Logout Button */}
 
       <div
-        className={`absolute bottom-4 left-3 cursor-pointer ${
+        className={`absolute bottom-4 left-3 cursor-pointer Inter_bold ${
           openSidebar ? 'p-4' : 'p-2'
-        } right-5 flex items-center gap-2  bg-red-100 text-red-600 rounded-[10px] hover:bg-red-200 transition`}
+        } right-5 flex items-center gap-2  bg-[#A600001A] text-[#A60000] rounded-[10px] hover:bg-[#A600001A] transition`}
       >
         <LogOut size={openSidebar ? 30 : 30} />
 

@@ -78,9 +78,6 @@ const AdminOfferPage = () => {
   const handlePrev = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
   }
-  const routeTonewOfferCreation = () => {
-    navigate('/offerPage/createnewOffer')
-  }
   // ******************Filtering *****************
 
   const [showFilter, setShowFilter] = useState(false)
@@ -133,7 +130,7 @@ const AdminOfferPage = () => {
               // 👉 Show Offers Table
               <>
                 <div className='p-4 gap-2 flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>
+                  <h2 className='text-lg kumbh_sans_25'>
                     {currentLang === 'ar' ? t('Offers') : 'Offers'}
                   </h2>
 

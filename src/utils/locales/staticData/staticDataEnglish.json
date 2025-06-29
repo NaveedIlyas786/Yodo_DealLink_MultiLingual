@@ -6,9 +6,17 @@
   "Total Users": "Total Users",
   "Dashboard": "Dashboard",
   "Offers": "Offers",
-  "Coupens": "Coupens",
+  "Coupons": "Coupons",
   "Payments": "Payments",
   "My Offers": "My Offers",
+  "Merchant": "Merchant",
+
+  "Coupon Code": "Coupon Code",
+  "Issued Date": "Issued Date",
+  "Expiry Date": "Expiry Date",
+  "Discount": "Discount",
+  "Used By": "Used By",
+  "Usage Date": "Usage Date",
 
   "Users": "Users",
   "Settings": "Settings",

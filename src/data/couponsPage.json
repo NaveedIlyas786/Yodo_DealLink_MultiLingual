@@ -1,0 +1,145 @@
+[
+  {
+    "id": 1,
+    "couponCode": "SUMMER25",
+    "issuedDate": "01-06-2025",
+    "expiryDate": "30-06-2025",
+    "discount": "25%",
+    "status": "Active",
+    "usedBy": "john.doe@example.com",
+    "usageDate": "12-06-2025",
+    "merchant": "Store A"
+  },
+  {
+    "id": 2,
+    "couponCode": "FALL10",
+    "issuedDate": "15-08-2025",
+    "expiryDate": "15-09-2025",
+    "discount": "10%",
+    "status": "Expired",
+    "usedBy": "alice.smith@example.com",
+    "usageDate": "14-09-2025",
+    "merchant": "Store B"
+  },
+  {
+    "id": 3,
+    "couponCode": "WELCOME50",
+    "issuedDate": "01-07-2025",
+    "expiryDate": "31-07-2025",
+    "discount": "50%",
+    "status": "Used",
+    "usedBy": "sarah.khan@example.com",
+    "usageDate": "20-07-2025",
+    "merchant": "Store C"
+  },
+  {
+    "id": 4,
+    "couponCode": "FLASH15",
+    "issuedDate": "10-06-2025",
+    "expiryDate": "20-06-2025",
+    "discount": "15%",
+    "status": "Expired",
+    "usedBy": "usman.ahmed@example.com",
+    "usageDate": "19-06-2025",
+    "merchant": "Store D"
+  },
+  {
+    "id": 5,
+    "couponCode": "LOYAL30",
+    "issuedDate": "05-09-2025",
+    "expiryDate": "30-09-2025",
+    "discount": "30%",
+    "status": "Active",
+    "usedBy": "faiza.noor@example.com",
+    "usageDate": "25-09-2025",
+    "merchant": "Store E"
+  },
+  {
+    "id": 6,
+    "couponCode": "DIWALI20",
+    "issuedDate": "01-11-2025",
+    "expiryDate": "15-11-2025",
+    "discount": "20%",
+    "status": "Used",
+    "usedBy": "ammar.javed@example.com",
+    "usageDate": "10-11-2025",
+    "merchant": "Store F"
+  },
+  {
+    "id": 7,
+    "couponCode": "NEWYEAR40",
+    "issuedDate": "20-12-2025",
+    "expiryDate": "05-01-2026",
+    "discount": "40%",
+    "status": "Active",
+    "usedBy": "hina.rauf@example.com",
+    "usageDate": "28-12-2025",
+    "merchant": "Store G"
+  },
+  {
+    "id": 8,
+    "couponCode": "BLACKFRIDAY60",
+    "issuedDate": "25-11-2025",
+    "expiryDate": "29-11-2025",
+    "discount": "60%",
+    "status": "Used",
+    "usedBy": "rehan.syed@example.com",
+    "usageDate": "27-11-2025",
+    "merchant": "Store H"
+  },
+  {
+    "id": 9,
+    "couponCode": "EIDGIFT15",
+    "issuedDate": "10-05-2025",
+    "expiryDate": "20-05-2025",
+    "discount": "15%",
+    "status": "Expired",
+    "usedBy": "ayesha.farooq@example.com",
+    "usageDate": "18-05-2025",
+    "merchant": "Store I"
+  },
+  {
+    "id": 10,
+    "couponCode": "WOMENSDAY35",
+    "issuedDate": "01-03-2025",
+    "expiryDate": "10-03-2025",
+    "discount": "35%",
+    "status": "Used",
+    "usedBy": "mehreen.sadiq@example.com",
+    "usageDate": "05-03-2025",
+    "merchant": "Store J"
+  },
+  {
+    "id": 11,
+    "couponCode": "YOUTH10",
+    "issuedDate": "01-08-2025",
+    "expiryDate": "12-08-2025",
+    "discount": "10%",
+    "status": "Used",
+    "usedBy": "junaid.rana@example.com",
+    "usageDate": "11-08-2025",
+    "merchant": "Store K"
+  },
+  {
+    "id": 12,
+    "couponCode": "RAMADAN100",
+    "issuedDate": "10-03-2025",
+    "expiryDate": "10-04-2025",
+    "discount": "100 PKR",
+    "status": "Expired",
+    "usedBy": "faisal.malik@example.com",
+    "usageDate": "08-04-2025",
+    "merchant": "Store L"
+  },
+  {
+    "id": 13,
+    "couponCode": "BIRTHDAY80",
+    "issuedDate": "05-06-2025",
+    "expiryDate": "10-06-2025",
+    "discount": "80%",
+    "status": "Used",
+    "usedBy": "komal.iftikhar@example.com",
+    "usageDate": "06-06-2025",
+    "merchant": "Store M"
+  }
+]

@@ -79,9 +79,6 @@ const AdminCatgeoryPage = () => {
   const handlePrev = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
   }
-  const routeTonewOfferCreation = () => {
-    navigate('/offerPage/createnewOffer')
-  }
   // ******************Filtering *****************
 
   const [showFilter, setShowFilter] = useState(false)
@@ -117,7 +114,7 @@ const AdminCatgeoryPage = () => {
 
   return (
     <div
-      className={`min-h-screen overflow-y-auto flex flex-col flex-1 py-[15px] bg-gray-50`}
+      className={`min-h-screen overflow-y-auto  flex flex-col flex-1 py-[15px] bg-gray-50`}
     >
       {/* Header */}
       <ProfileNotification />
@@ -135,15 +132,15 @@ const AdminCatgeoryPage = () => {
             ) : (
               // 👉 Show Offers Table
               <>
-                <div className='p-4 gap-2 flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>
+                <div className='p-4 gap-2 flex justify-between  items-center'>
+                  <h2 className='text-lg kumbh_sans_25'>
                     {currentLang === 'ar' ? t('Category') : 'Category'}
                   </h2>
 
                   <Button
                     onClick={ShowNewOfferCreationComponent}
                     variant='default'
-                    className='bg-green-800 hover:bg-green-700 cursor-pointer text-white'
+                    className='bg-green-800 hover:bg-green-700 kumbh_sans_sami_bold cursor-pointer text-white'
                   >
                     {t('Add New Category')}
                   </Button>

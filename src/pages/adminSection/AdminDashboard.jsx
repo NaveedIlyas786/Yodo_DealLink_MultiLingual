@@ -56,9 +56,9 @@ const AdminDashboard = () => {
 
   const headers = [
     { key: 'offerTitle', label: t('offerTitle') },
-    { key: 'merchant', label: t('merchant') },
-    { key: 'category', label: t('category') },
-    { key: 'status', label: t('status') },
+    { key: 'merchant', label: t('Merchant') },
+    { key: 'category', label: t('Category') },
+    { key: 'status', label: t('Status') },
   ]
 
   useEffect(() => {
@@ -104,7 +104,7 @@ const AdminDashboard = () => {
 
       {/* Summary Cards */}
       <div className='my-5'>
-        <h2 className='text-md font-semibold'>{t('Summary Overview')}</h2>
+        <h2 className=' kumbh_sans_SubTitels'>{t('Summary Overview')}</h2>
         <div className='flex flex-wrap gap-4'>
           {summaryData.map((a, index) => (
             <div
@@ -116,15 +116,15 @@ const AdminDashboard = () => {
                 alt={a.title}
                 className='w-10 h-10 mb-2'
               />
-              <h2 className='text-lg font-semibold'>{titles[index]}</h2>
-              <h1 className='text-[22px] font-bold flex items-center gap-2'>
+              <h2 className='kumbh_sans_miniTitels18'>{titles[index]}</h2>
+              <h1 className='kumbh_sans_SubTitels flex items-center gap-2'>
                 {t(`${a.value}`)}
                 <span className='text-[#17642F] text-sm flex items-center'>
                   <TrendingUp />
                   {a.change}
                 </span>
               </h1>
-              <p>{t(`${a.description}`)}</p>
+              <p className='kumbh_sans_normal_bold'>{t(`${a.description}`)}</p>
             </div>
           ))}
         </div>
@@ -137,10 +137,10 @@ const AdminDashboard = () => {
       {/* Offers Table + Recent Activity */}
       <div className='flex bg-white rounded-[20px] p-3 gap-[20px] overflow-x-auto w-full xll:overflow-x-visible'>
         {/* Offers Table */}
-        <Card className='flex-[0.75] min-w-[768px]'>
+        <Card className='flex-[0.90] min-w-[768px]'>
           <CardContent className='p-0'>
             <div className='p-4 flex justify-between items-center'>
-              <h2 className='text-lg font-semibold'>
+              <h2 className='text-lg kumbh_sans_SubTitels'>
                 {t('Offers Needing Review')}
               </h2>
               <Input
@@ -188,10 +188,12 @@ const AdminDashboard = () => {
         </Card>
 
         {/* Recent Activity */}
-        <Card className='flex-[0.25] min-w-[370px]'>
+        <Card className='flex-[0.10] min-w-[320px]'>
           <CardContent className='p-0'>
             <div className='p-4 flex justify-between items-center'>
-              <h2 className='text-lg font-semibold'>{t('Recent Activity')}</h2>
+              <h2 className='text-lg kumbh_sans_miniTitels18'>
+                {t('Recent Activity')}
+              </h2>
             </div>
             <hr />
             <div>
@@ -212,9 +214,15 @@ const AdminDashboard = () => {
                     />
                   </div>
                   <div className='flex flex-col flex-[0.85] text-left gap-[10px]'>
-                    <h3 className='leading-none'>{a.name}</h3>
-                    <h4 className='leading-none'>{a.message}</h4>
-                    <h4 className='leading-none'>{a.timeAgo}</h4>
+                    <h3 className='leading-none kumbh_sans_sami_bold'>
+                      {a.name}
+                    </h3>
+                    <h4 className='leading-none Inter_normal_bold'>
+                      {a.message}
+                    </h4>
+                    <h4 className='leading-none kumbh_sans_normal_bold'>
+                      {a.timeAgo}
+                    </h4>
                   </div>
                 </div>
               ))}

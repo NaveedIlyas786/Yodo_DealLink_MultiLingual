@@ -3,7 +3,7 @@ const Bell = LucideIcons.Bell
 const UserCircle = LucideIcons.UserCircle
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { useDynamicNamespace } from './useDynamicNameSpace'
+import { useDynamicNamespace } from './useDynamicNamespace'
 
 const ProfileNotification = () => {
   const ns = useDynamicNamespace() // ✅ use the namespace from the URL
@@ -13,8 +13,8 @@ const ProfileNotification = () => {
   return (
     <div className='flex justify-between shadow-md bg-white px-[20px] py-[15px]  rounded-xl items-center mb-[20px]'>
       <div>
-        <h1 className='text-lg font-semibold'>{t('Hey! Arlene McCoyy')}</h1>
-        <p className='text-gray-500 text-sm'>
+        <h1 className='text-lg Helviticaneue'>{t('Hey! Arlene McCoyy')}</h1>
+        <p className='text-gray-500 poppins_normal_bold'>
           {t('Here’s an overview of platform activity.')}
         </p>
       </div>

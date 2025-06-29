@@ -26,58 +26,58 @@ const SignUp = () => {
           <img src={dealLinkLogo} alt='DealLink' className='h-10' />
         </div>
 
-        <h2 className='text-center kumbh_sana_bold text-gray-800 mb-[15px]'>
+        <h2 className='text-center kumbh_sans_bold text-gray-800 mb-[15px]'>
           Create your Account
         </h2>
 
         <form className='flex flex-col gap-[15px]'>
           <div>
-            <label className='block kumbh_sana_sami_bold text-gray-700'>
+            <label className='block kumbh_sans_sami_bold  text-[#323232]'>
               Business Name
             </label>
             <input
               type='text'
               placeholder='e.g., Glow Beauty Salon'
-              className='w-full mt-[14px] px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+              className='w-full mt-[14px] px-4 py-[7px] Inter_normal border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
             />
           </div>
 
           <div className='flex flex-col md:flex-row gap-[15px]'>
             <div className='flex-1'>
-              <label className='block kumbh_sana_sami_bold text-gray-700'>
+              <label className='block kumbh_sans_sami_bold  text-[#323232]'>
                 Owner's First Name
               </label>
               <input
                 type='text'
                 placeholder='Enter your first name'
-                className='w-full mt-1 px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+                className='w-full mt-1 px-4 Inter_normal py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
               />
             </div>
             <div className='flex-1'>
-              <label className='block kumbh_sana_sami_bold text-gray-700'>
+              <label className='block kumbh_sans_sami_bold  text-[#323232]'>
                 Owner's Last Name
               </label>
               <input
                 type='text'
                 placeholder='Enter your last name'
-                className='w-full mt-1 px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+                className='w-full mt-1 px-4 Inter_normal py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
               />
             </div>
           </div>
 
           <div className='flex flex-col md:flex-row gap-[15px]'>
             <div className='flex-1'>
-              <label className='block kumbh_sana_sami_bold text-gray-700'>
+              <label className='block kumbh_sans_sami_bold  text-[#323232]'>
                 Email Address
               </label>
               <input
                 type='email'
                 placeholder='Enter your email address'
-                className='w-full mt-1 px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+                className='w-full mt-1 px-4 Inter_normal py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
               />
             </div>
             <div className='flex-1'>
-              <label className='block kumbh_sana_sami_bold text-gray-700'>
+              <label className='block kumbh_sans_sami_bold  text-[#323232]'>
                 Phone Number
               </label>
               <div className='flex items-center rounded-xl border border-input bg-background px-4 mt-1 py-[8px]'>
@@ -89,7 +89,7 @@ const SignUp = () => {
                   name='phoneNumber'
                   id='phoneNumber'
                   placeholder='3001234567'
-                  className='w-full px-3 bg-white outline-none '
+                  className='w-full px-3 Inter_normal bg-white outline-none '
                 />
               </div>
             </div>
@@ -97,37 +97,40 @@ const SignUp = () => {
 
           <div className='flex flex-col md:flex-row gap-[15px]'>
             <div className='flex-1'>
-              <label className='block kumbh_sana_sami_bold text-gray-700'>
+              <label className='block kumbh_sans_sami_bold  text-[#323232]'>
                 Password
               </label>
               <input
                 type='password'
                 placeholder='********'
                 autoComplete='current-password' // ✅ Fixes browser autofill warning
-                className='w-full mt-1 px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+                className='w-full mt-1 px-4 Inter_normal py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
               />
             </div>
             <div className='flex-1'>
-              <label className='block kumbh_sana_sami_bold text-gray-700'>
+              <label className='block kumbh_sans_sami_bold  text-[#323232]'>
                 Confirm Password
               </label>
               <input
                 type='password'
                 placeholder='********'
                 autoComplete='current-password' // ✅ Fixes browser autofill warning
-                className='w-full mt-1 px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+                className='w-full mt-1 px-4 Inter_normal py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
               />
             </div>
           </div>
 
           {/* Terms and Buttons */}
-          <div className='flex items-center mt-[5px]'>
+          <div className='flex items-center mt-[2px]'>
             <input
               type='checkbox'
               id='terms'
               className='mr-2 w-4 h-4 text-orange-600'
             />
-            <label htmlFor='terms' className='text-sm text-gray-700'>
+            <label
+              htmlFor='terms'
+              className='text-sm Inter_normal_bold text-gray-700'
+            >
               I agree to DealLink{' '}
               <a href='/' className='text-orange-400 underline'>
                 Terms & Conditions
@@ -138,19 +141,19 @@ const SignUp = () => {
           <div className='flex justify-between items-center mt-[5px] gap-[16px]'>
             <button
               type='button'
-              className='bg-[#2525251A] text-[#252525] px-6 py-[7px] rounded-full cursor-not-allowed'
+              className='bg-[#2525251A] text-[#252525] px-6 py-[10px] rounded-full cursor-not-allowed'
             >
               Back
             </button>
             <button
               type='submit'
-              className='bg-gradient-to-r flex-1 cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[7px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
+              className='bg-gradient-to-r flex-1 poppins_normal_bold cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[10px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
             >
               Save & Continue
             </button>
           </div>
 
-          <p className='text-sm text-center text-gray-600 mt-[5px]'>
+          <p className='text-sm text-center text-gray-600 mt-[2px]'>
             If you are already a member, please{' '}
             <a href='/' className='text-orange-400 underline'>
               Login

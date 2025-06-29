@@ -25,32 +25,32 @@ const Login = () => {
           <img src={dealLinkLogo} alt='DealLink' className='h-10' />
         </div>
 
-        <h2 className='text-center kumbh_sana_bold text-gray-800 mb-[30px]'>
+        <h2 className='text-center kumbh_sans_bold text-gray-800 mb-[30px]'>
           Login to your Account
         </h2>
 
         <form className='flex flex-col gap-[20px]'>
           <div className='flex-1'>
-            <label className='block kumbh_sana_sami_bold  text-gray-700'>
+            <label className='block kumbh_sans_sami_bold  text-[#323232]'>
               Email Address
             </label>
             <input
               type='email'
               placeholder='Enter your Email'
-              className='w-full mt-1 px-4 py-[19px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+              className='w-full mt-1 px-4 Inter_normal py-[19px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
             />
           </div>
 
           <div className='flex flex-col md:flex-row gap-[20px]'>
             <div className='flex-1'>
-              <label className='block kumbh_sana_sami_bold  text-gray-700'>
+              <label className='block kumbh_sans_sami_bold  text-[#323232]'>
                 Password
               </label>
               <input
                 type='password'
                 placeholder='********'
                 autoComplete='current-password' // ✅ Fixes browser autofill warning
-                className='w-full mt-1 px-4 py-[19px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+                className='w-full mt-1 px-4 Inter_normal py-[19px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
               />
             </div>
           </div>
@@ -63,11 +63,11 @@ const Login = () => {
                 id='terms'
                 className='mr-2 w-4 h-4 text-orange-600'
               />
-              <span className='-mt-1 Inter_normal_bold'>Remember me</span>
+              <span className='Inter_normal_bold'>Remember me</span>
             </div>
             <label
               htmlFor='terms'
-              className='text-sm Inter_normal_bold text-gray-700'
+              className='text-sm Inter_normal_bold text-[#323232]'
             >
               <a href='#' className='text-[#0069C1]'>
                 Forgot Password
@@ -80,13 +80,13 @@ const Login = () => {
               type='submit'
               className='bg-gradient-to-r w-full poppins_normal_bold cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[19px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
             >
-              Save & Continue
+              Login
             </button>
           </div>
 
           <p className='text-sm text-center text-gray-600 mt-[15px]'>
             Don't have an account?
-            <a href='/register' className='text-orange-400 ml-2 underline'>
+            <a href='/register' className='text-orange-400 ml-2 '>
               Create an account
             </a>
           </p>

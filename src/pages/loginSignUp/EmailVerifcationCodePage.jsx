@@ -25,15 +25,15 @@ const EmailVerifcationCodePage = () => {
         <div className='flex justify-center mb-[70px]'>
           <img src={dealLinkLogo} alt='DealLink' className='h-10' />
         </div>
-        <h2 className='text-center text-2xl font-bold text-gray-800 mb-[20px]'>
+        <h2 className='text-center kumbh_sans_bold text-gray-800 mb-[20px]'>
           Please check Your email
         </h2>
-        <p className='text-center text-[16px] text-[#252525] mb-[50px]'>
+        <p className='text-center Inter_normal text-[#252525] mb-[50px]'>
           We've just sent a password reset email to your inbox.
         </p>
         <form className='flex flex-col gap-[20px]'>
           <div className='flex-1'>
-            <p className='text-center text-[16px] text-[#252525] mb-[22px]'>
+            <p className='text-center kumbh_sans_normal_bold text-[#252525] mb-[22px]'>
               Enter your verification code
             </p>
             <div className='flex items-center gap-[8px] justify-center'>
@@ -60,7 +60,7 @@ const EmailVerifcationCodePage = () => {
 
           <button
             type='submit'
-            className='bg-gradient-to-r w-full mt-[40px] cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[7px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
+            className='bg-gradient-to-r w-full poppins_normal_bold cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[19px] rounded-full mt-[40px] shadow hover:from-orange-500 hover:to-orange-600 transition'
           >
             Verify
           </button>

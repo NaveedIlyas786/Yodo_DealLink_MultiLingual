@@ -106,7 +106,7 @@ const UserDashboard = () => {
 
       {/* Summary Cards */}
       <div className='my-5'>
-        <h2 className='text-md font-semibold'>{t('Summary Overview')}</h2>
+        <h2 className='kumbh_sans_SubTitels'>{t('Summary Overview')}</h2>
         <div className='flex flex-wrap gap-4'>
           {summaryData.map((a, index) => (
             <div
@@ -118,15 +118,15 @@ const UserDashboard = () => {
                 alt={a.title}
                 className='w-10 h-10 mb-2'
               />
-              <h2 className='text-lg font-semibold'>{titles[index]}</h2>
-              <h1 className='text-[22px] font-bold flex items-center gap-2'>
+              <h2 className='kumbh_sans_miniTitels18'>{titles[index]}</h2>
+              <h1 className='kumbh_sans_SubTitels flex items-center gap-2'>
                 {t(`${a.value}`)}
                 <span className='text-[#17642F] text-sm flex items-center'>
                   <TrendingUp />
                   {a.change}
                 </span>
               </h1>
-              <p>{t(`${a.description}`)}</p>
+              <p className='kumbh_sans_normal_bold'>{t(`${a.description}`)}</p>
             </div>
           ))}
         </div>
@@ -143,7 +143,7 @@ const UserDashboard = () => {
         <Card className='flex-[1] min-w-[768px]'>
           <CardContent className='p-0'>
             <div className='p-4 flex justify-between items-center'>
-              <h2 className='text-lg font-semibold'>
+              <h2 className='kumbh_sans_SubTitels'>
                 {t('Top Performing Offer')}
               </h2>
               <Input

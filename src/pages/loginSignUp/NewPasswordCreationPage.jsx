@@ -25,36 +25,36 @@ const NewPasswordCreationPage = () => {
         <div className='flex justify-center mb-[70px]'>
           <img src={dealLinkLogo} alt='DealLink' className='h-10' />
         </div>
-        <h2 className='text-center text-2xl font-bold text-gray-800 mb-[30px]'>
+        <h2 className='text-center kumbh_sans_bold text-gray-800 mb-[15px]'>
           Create Your New Password
         </h2>
         <form className='flex flex-col gap-[20px]'>
           <div className='flex-1'>
-            <label className='block text-sm font-medium text-gray-700'>
+            <label className='block text-sm kumbh_sans_sami_bold text-gray-700'>
               Password
             </label>
             <input
               type='password'
               placeholder='Enter your Password'
               autoComplete='current-password' // ✅ Fixes browser autofill warning
-              className='w-full mt-1 px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+              className='w-full mt-1 px-4 py-[10px] Inter_normal border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
             />
           </div>
           <div className='flex-1'>
-            <label className='block text-sm font-medium text-gray-700'>
+            <label className='block text-sm kumbh_sans_sami_bold text-gray-700'>
               Confirm Password
             </label>
             <input
               type='password'
               placeholder='Enter your Confirm Password'
               autoComplete='current-password' // ✅ Fixes browser autofill warning
-              className='w-full mt-1 px-4 py-[7px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
+              className='w-full mt-1 px-4 py-[10px] Inter_normal border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
             />
           </div>
 
           <button
             type='submit'
-            className='bg-gradient-to-r w-full mt-[15px] cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[7px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
+            className='bg-gradient-to-r w-full poppins_normal_bold cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[19px] rounded-full mt-[20px] shadow hover:from-orange-500 hover:to-orange-600 transition'
           >
             Save
           </button>

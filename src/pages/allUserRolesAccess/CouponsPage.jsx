@@ -1,12 +1,11 @@
 import { Button } from '@/components/ui/button'
 import { Card, CardContent } from '@/components/ui/card'
 import React, { useEffect, useState } from 'react'
-import tabledata from '@/data/tableEntries.json'
+import CouponsData from '@/data/couponsPage.json'
 import ReusableTable from '@/components/ReusableTable'
 import '../../App.css'
 import { Input } from '@/components/ui/input'
 import ProfileNotification from '@/components/ProfileNotification'
-// import { useTranslation } from 'react-i18next'
 import { useTranslation } from 'react-i18next'
 import i18n from '@/utils/i18n'
 import { useNavigate } from 'react-router-dom'
@@ -15,22 +14,25 @@ import CreateOfferForm from '@/components/dashboardOffers/CreateOfferForm'
 import { useDynamicNamespace } from '@/components/useDynamicNameSpace'
 
 const statusColors = {
-  Approved: 'bg-green-100 text-green-700',
-  Rejected: 'bg-red-100 text-red-700',
-  Pending: 'bg-yellow-100 text-yellow-700',
+  Active: 'bg-green-100 text-green-700',
+  Used: 'bg-yellow-100 text-yellow-700',
+  Expired: 'bg-red-100 text-red-700',
 }
 
-const UserOfferPage = () => {
+const CouponsPage = () => {
   const currentLang = i18n.language
   const ns = useDynamicNamespace() // ✅ use the namespace from the URL
   const { t } = useTranslation([ns, 'static']) // ✅ load both main + fallback
 
   const headers = [
-    { key: 'offerName', label: t('Offer Name') },
-    { key: 'views', label: t('Views') },
-    { key: 'redemptions', label: t('Redemptions') },
-    { key: 'validity', label: t('Validity') },
+    { key: 'couponCode', label: t('Coupon Code') },
+    { key: 'issuedDate', label: t('Issued Date') },
+    { key: 'expiryDate', label: t('Expiry Date') },
+    { key: 'discount', label: t('Discount') },
     { key: 'status', label: t('Status') },
+    { key: 'usedBy', label: t('Used By') },
+    { key: 'usageDate', label: t('Usage Date') },
+    { key: 'merchant', label: t('Merchant') },
   ]
 
   const navigate = useNavigate()
@@ -39,8 +41,8 @@ const UserOfferPage = () => {
   const [tableJson, setTableJson] = useState([])
 
   useEffect(() => {
-    setTableJson(tabledata)
-  }, [tabledata])
+    setTableJson(CouponsData)
+  }, [CouponsData])
   // console.log('tableJson: ', tableJson)
 
   const [currentPage, setCurrentPage] = useState(1)
@@ -136,16 +138,8 @@ const UserOfferPage = () => {
               <>
                 <div className='p-4 gap-2 flex justify-between items-center'>
                   <h2 className='text-lg kumbh_sans_25'>
-                    {currentLang === 'ar' ? t('My Offers') : 'My Offers'}
+                    {currentLang === 'ar' ? t('Coupons') : 'Coupons'}
                   </h2>
-
-                  <Button
-                    onClick={ShowNewOfferCreationComponent}
-                    variant='default'
-                    className='bg-green-800 hover:bg-green-700 kumbh_sans_sami_bold cursor-pointer text-white'
-                  >
-                    {t('Add New Offer')}
-                  </Button>
                 </div>
 
                 <div className='p-4 gap-2 flex justify-between items-center'>
@@ -169,6 +163,7 @@ const UserOfferPage = () => {
                   headers={headers}
                   data={filteredItems}
                   statusColors={statusColors}
+                  showActions={false} // ← hide the Actions column here
                 />
 
                 {showFilter && (
@@ -214,4 +209,4 @@ const UserOfferPage = () => {
   )
 }
 
-export default UserOfferPage
+export default CouponsPage

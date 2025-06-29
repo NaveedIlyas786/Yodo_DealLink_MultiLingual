@@ -79,7 +79,7 @@ const Users = () => {
         <Card className='min-w-[768px]'>
           <CardContent className='p-0'>
             <div className='p-4 flex justify-between items-center'>
-              <h2 className='text-lg font-semibold'>
+              <h2 className='text-lg kumbh_sans_25'>
                 {currentLang === 'ar' ? t('Users') : 'Users'}
               </h2>
               <div className='flex gap-3'>

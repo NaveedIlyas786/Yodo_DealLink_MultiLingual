@@ -17,15 +17,54 @@
   src: url(./assets/fonts/InterRegular.ttf);
   font-weight: 500;
 }
-
-.kumbh_sana_bold {
+@font-face {
+  font-family: 'HelveticaNeue';
+  src: url(./assets/fonts/HelveticaNeueBold.otf);
+  font-weight: 700;
+}
+.Helviticaneue_20 {
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 20px;
+}
+.Helviticaneue {
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 25px;
+}
+.Helviticaneue_16 {
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 16px;
+}
+.kumbh_sans_25 {
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 25px;
+}
+.kumbh_sans_bold {
   font-family: 'Kumbh Sans';
   font-weight: 700;
   font-size: 30px;
 }
-.kumbh_sana_sami_bold {
+.kumbh_sans_sami_bold {
   font-family: 'Kumbh Sans';
   font-weight: 600;
+  font-size: 14px;
+}
+.kumbh_sans_SubTitels {
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 20px;
+}
+.kumbh_sans_miniTitels18 {
+  font-family: 'Kumbh Sans';
+  font-weight: 700;
+  font-size: 18px;
+}
+.kumbh_sans_normal_bold {
+  font-family: 'Kumbh Sans';
+  font-weight: 500;
   font-size: 14px;
 }
 .poppins_normal_bold {
@@ -33,9 +72,19 @@
   font-weight: 700;
   font-size: 16px;
 }
+.Inter_bold {
+  font-family: 'Inter';
+  font-weight: 500;
+  font-size: 16px;
+}
 .Inter_normal_bold {
   font-family: 'Inter';
   font-weight: 500;
+  font-size: 14px;
+}
+.Inter_normal {
+  font-family: 'Inter';
+  font-weight: 400;
   font-size: 14px;
 }
 
@@ -44,8 +93,8 @@
   border-radius: 10px;
 }
 .sidebar ul li a:hover {
-  background-color: #17642f;
-  color: #ffffff;
+  background-color: #17642f1a;
+  color: #17642f;
   padding: 15px;
   border-radius: 10px;
 }

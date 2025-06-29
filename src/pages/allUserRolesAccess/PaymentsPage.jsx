@@ -135,7 +135,7 @@ const PaymentsPage = () => {
               // 👉 Show Offers Table
               <>
                 <div className='p-4 gap-2 flex justify-between items-center'>
-                  <h2 className='text-lg font-semibold'>
+                  <h2 className='text-lg kumbh_sans_25'>
                     {currentLang === 'ar' ? t('Payments') : 'Payments'}
                   </h2>
                 </div>
@@ -161,6 +161,7 @@ const PaymentsPage = () => {
                   headers={headers}
                   data={filteredItems}
                   statusColors={statusColors}
+                  showActions={false} // ← hide the Actions column here
                 />
 
                 {showFilter && (
