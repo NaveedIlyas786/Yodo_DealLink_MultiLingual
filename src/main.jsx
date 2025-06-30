@@ -6,13 +6,16 @@ import AppWithTranslation from './components/AppWithTranslation'
 import './utils/i18n'
 import './index.css'
 import ErrorBoundary from './components/ErrorBoundary'
+import { NotificationProvider } from './context/NotificationContext'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ErrorBoundary>
       <BrowserRouter>
         <SidebarProvider>
-          <AppWithTranslation />
+          <NotificationProvider>
+            <AppWithTranslation />
+          </NotificationProvider>
         </SidebarProvider>
       </BrowserRouter>
     </ErrorBoundary>
