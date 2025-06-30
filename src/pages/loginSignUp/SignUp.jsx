@@ -2,7 +2,11 @@ import React from 'react'
 import loginLeft from '../../assets/loginLeft.png'
 import loginRight from '../../assets/loginRight.png'
 import dealLinkLogo from '../../assets/dealLinkLogo.png'
+import { UseDynamicNamespace } from '../../components/useDynamicNamespace'
+import { useTranslation } from 'react-i18next'
 const SignUp = () => {
+  const ns = UseDynamicNamespace()
+  const { t } = useTranslation([ns, 'static'])
   return (
     <div className='relative min-h-screen  md:px-[49px]  py-[29px] bg-gray-50 flex items-center justify-center '>
       {/* Left Background Image */}
@@ -27,13 +31,13 @@ const SignUp = () => {
         </div>
 
         <h2 className='text-center kumbh_sans_bold text-gray-800 mb-[15px]'>
-          Create your Account
+          {t('Create your Account')}
         </h2>
 
         <form className='flex flex-col gap-[15px]'>
           <div>
             <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-              Business Name
+              {t('Business Name')}
             </label>
             <input
               type='text'
@@ -45,7 +49,7 @@ const SignUp = () => {
           <div className='flex flex-col md:flex-row gap-[15px]'>
             <div className='flex-1'>
               <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-                Owner's First Name
+                {t("Owner's First Name")}
               </label>
               <input
                 type='text'
@@ -55,7 +59,7 @@ const SignUp = () => {
             </div>
             <div className='flex-1'>
               <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-                Owner's Last Name
+                {t("Owner's Last Name")}
               </label>
               <input
                 type='text'
@@ -68,7 +72,7 @@ const SignUp = () => {
           <div className='flex flex-col md:flex-row gap-[15px]'>
             <div className='flex-1'>
               <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-                Email Address
+                {t('Email Address')}
               </label>
               <input
                 type='email'
@@ -78,7 +82,7 @@ const SignUp = () => {
             </div>
             <div className='flex-1'>
               <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-                Phone Number
+                {t('Phone Number')}
               </label>
               <div className='flex items-center rounded-xl border border-input bg-background px-4 mt-1 py-[8px]'>
                 <span className='text-gray-500 pr-3 border-r border-gray-300'>
@@ -98,7 +102,7 @@ const SignUp = () => {
           <div className='flex flex-col md:flex-row gap-[15px]'>
             <div className='flex-1'>
               <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-                Password
+                {t('Password')}
               </label>
               <input
                 type='password'
@@ -109,7 +113,7 @@ const SignUp = () => {
             </div>
             <div className='flex-1'>
               <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-                Confirm Password
+                {t('Confirm Password')}
               </label>
               <input
                 type='password'
@@ -125,15 +129,15 @@ const SignUp = () => {
             <input
               type='checkbox'
               id='terms'
-              className='mr-2 w-4 h-4 text-orange-600'
+              className='mx-2 w-4 h-4 text-orange-600'
             />
             <label
               htmlFor='terms'
               className='text-sm Inter_normal_bold text-gray-700'
             >
-              I agree to DealLink{' '}
-              <a href='/' className='text-orange-400 underline'>
-                Terms & Conditions
+              {t('I agree to DealLink')}
+              <a href='/' className='text-orange-400 mx-2 underline'>
+                {t('Terms & Conditions')}
               </a>
             </label>
           </div>
@@ -143,20 +147,20 @@ const SignUp = () => {
               type='button'
               className='bg-[#2525251A] text-[#252525] px-6 py-[10px] rounded-full cursor-not-allowed'
             >
-              Back
+              {t('Back')}
             </button>
             <button
               type='submit'
               className='bg-gradient-to-r flex-1 poppins_normal_bold cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[10px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
             >
-              Save & Continue
+              {t('Save & Continue')}
             </button>
           </div>
 
           <p className='text-sm text-center text-gray-600 mt-[2px]'>
-            If you are already a member, please{' '}
-            <a href='/' className='text-orange-400 underline'>
-              Login
+            {t('If you are already a member, please')}
+            <a href='/' className='text-orange-400 mx-2 underline'>
+              {t('Login')}
             </a>
           </p>
         </form>

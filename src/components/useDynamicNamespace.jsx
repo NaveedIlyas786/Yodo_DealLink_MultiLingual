@@ -1,6 +1,6 @@
 import { useLocation } from 'react-router-dom'
 
-export const useDynamicNamespace = () => {
+export const UseDynamicNamespace = () => {
   const { pathname } = useLocation()
 
   // Remove leading slash and split into segments

@@ -3,11 +3,11 @@ const Bell = LucideIcons.Bell
 const UserCircle = LucideIcons.UserCircle
 import React from 'react'
 import { useTranslation } from 'react-i18next'
-import { useDynamicNamespace } from './useDynamicNamespace'
+import { UseDynamicNamespace } from './UseDynamicNamespace'
 import { useNotification } from '../context/NotificationContext'
 
 const ProfileNotification = () => {
-  const ns = useDynamicNamespace() // ✅ use the namespace from the URL
+  const ns = UseDynamicNamespace() // ✅ use the namespace from the URL
   const { t } = useTranslation([ns, 'static']) // ✅ load both main + fallback
   // console.log('Current language table:', t.language)
 

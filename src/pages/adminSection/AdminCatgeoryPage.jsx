@@ -11,7 +11,7 @@ import { useTranslation } from 'react-i18next'
 import i18n from '@/utils/i18n'
 import { useNavigate } from 'react-router-dom'
 import FilterSidebar from '@/components/dashboardOffers/FilterSidebar'
-import { useDynamicNamespace } from '@/components/useDynamicNameSpace'
+import { UseDynamicNamespace } from '@/components/UseDynamicNamespace'
 import CreateCategoryForm from '@/components/dashboardCategory/CreateCategoryForm'
 
 const statusColors = {
@@ -22,7 +22,7 @@ const statusColors = {
 
 const AdminCatgeoryPage = () => {
   const currentLang = i18n.language
-  const ns = useDynamicNamespace() // ✅ use the namespace from the URL
+  const ns = UseDynamicNamespace() // ✅ use the namespace from the URL
   const { t } = useTranslation([ns, 'static']) // ✅ load both main + fallback
   const headers = [
     { key: 'offerName', label: t('offerName') },

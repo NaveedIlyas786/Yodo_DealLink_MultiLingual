@@ -11,7 +11,7 @@ import i18n from '@/utils/i18n'
 import { useNavigate } from 'react-router-dom'
 import FilterSidebar from '@/components/dashboardOffers/FilterSidebar'
 import CreateOfferForm from '@/components/dashboardOffers/CreateOfferForm'
-import { useDynamicNamespace } from '@/components/useDynamicNameSpace'
+import { UseDynamicNamespace } from '@/components/UseDynamicNamespace'
 
 const statusColors = {
   Approved: 'bg-green-100 text-green-700',
@@ -29,7 +29,7 @@ const AdminOfferPage = () => {
     { key: 'status', label: 'status' },
   ]
 
-  const ns = useDynamicNamespace() // ✅ use the namespace from the URL
+  const ns = UseDynamicNamespace() // ✅ use the namespace from the URL
   const { t } = useTranslation([ns, 'static']) // ✅ load both main + fallback
   const navigate = useNavigate()
   // console.log('Current language table:', t.language)

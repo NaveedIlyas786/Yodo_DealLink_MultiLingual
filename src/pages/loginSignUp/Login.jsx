@@ -2,7 +2,12 @@ import React from 'react'
 import loginLeft from '../../assets/loginLeft.png'
 import loginRight from '../../assets/loginRight.png'
 import dealLinkLogo from '../../assets/dealLinkLogo.png'
+import { useTranslation } from 'react-i18next'
+import { UseDynamicNamespace } from '../../components/useDynamicNamespace'
 const Login = () => {
+  const ns = UseDynamicNamespace()
+  const { t } = useTranslation([ns, 'static'])
+
   return (
     <div className='relative min-h-screen  md:px-[49px]  py-[29px] bg-gray-50 flex items-center justify-center '>
       <img
@@ -26,13 +31,13 @@ const Login = () => {
         </div>
 
         <h2 className='text-center kumbh_sans_bold text-gray-800 mb-[30px]'>
-          Login to your Account
+          {t('Login to your Account')}
         </h2>
 
         <form className='flex flex-col gap-[20px]'>
           <div className='flex-1'>
             <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-              Email Address
+              {t('Email Address')}
             </label>
             <input
               type='email'
@@ -44,7 +49,7 @@ const Login = () => {
           <div className='flex flex-col md:flex-row gap-[20px]'>
             <div className='flex-1'>
               <label className='block kumbh_sans_sami_bold  text-[#323232]'>
-                Password
+                {t('Password')}
               </label>
               <input
                 type='password'
@@ -63,14 +68,14 @@ const Login = () => {
                 id='terms'
                 className='mr-2 w-4 h-4 text-orange-600'
               />
-              <span className='Inter_normal_bold'>Remember me</span>
+              <span className='Inter_normal_bold'>{t('Remember me')} </span>
             </div>
             <label
               htmlFor='terms'
               className='text-sm Inter_normal_bold text-[#323232]'
             >
               <a href='#' className='text-[#0069C1]'>
-                Forgot Password
+                {t('Forgot Password')}
               </a>
             </label>
           </div>
@@ -80,14 +85,14 @@ const Login = () => {
               type='submit'
               className='bg-gradient-to-r w-full poppins_normal_bold cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[19px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
             >
-              Login
+              {t('Login')}
             </button>
           </div>
 
           <p className='text-sm text-center text-gray-600 mt-[15px]'>
-            Don't have an account?
+            {t("Don't have an account?")}
             <a href='/register' className='text-orange-400 ml-2 '>
-              Create an account
+              {t('Create an account')}
             </a>
           </p>
         </form>

@@ -11,7 +11,7 @@ import i18n from '@/utils/i18n'
 import { useNavigate } from 'react-router-dom'
 import FilterSidebar from '@/components/dashboardOffers/FilterSidebar'
 import CreateOfferForm from '@/components/dashboardOffers/CreateOfferForm'
-import { useDynamicNamespace } from '@/components/useDynamicNameSpace'
+import { UseDynamicNamespace } from '@/components/UseDynamicNamespace'
 
 const statusColors = {
   Completed: 'bg-green-100 text-green-700',
@@ -22,8 +22,8 @@ const statusColors = {
 
 const PaymentsPage = () => {
   const currentLang = i18n.language
-  const ns = useDynamicNamespace() // ✅ use the namespace from the URL
-  const { t } = useTranslation([ns, 'static']) // ✅ load both main + fallback
+  const ns = UseDynamicNamespace()
+  const { t } = useTranslation([ns, 'static'])
 
   const headers = [
     { key: 'paymentId', label: t('Payment ID') },
@@ -80,9 +80,7 @@ const PaymentsPage = () => {
   const handlePrev = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
   }
-  const routeTonewOfferCreation = () => {
-    navigate('/offerPage/createnewOffer')
-  }
+
   // ******************Filtering *****************
 
   const [showFilter, setShowFilter] = useState(false)

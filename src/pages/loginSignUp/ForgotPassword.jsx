@@ -2,7 +2,11 @@ import React from 'react'
 import loginLeft from '../../assets/loginLeft.png'
 import loginRight from '../../assets/loginRight.png'
 import dealLinkLogo from '../../assets/dealLinkLogo.png'
+import { UseDynamicNamespace } from '../../components/useDynamicNamespace'
+import { useTranslation } from 'react-i18next'
 const ForgotPassword = () => {
+  const ns = UseDynamicNamespace()
+  const { t } = useTranslation([ns, 'static'])
   return (
     <div className='relative min-h-screen  md:px-[49px]  py-[29px] bg-gray-50 flex items-center justify-center '>
       {/* Left Background Image */}
@@ -26,12 +30,12 @@ const ForgotPassword = () => {
           <img src={dealLinkLogo} alt='DealLink' className='h-10' />
         </div>
         <h2 className='text-center kumbh_sans_bold text-gray-800 mb-[15px]'>
-          Forget Password
+          {t('Forgot Password')}
         </h2>
         <form className='flex flex-col gap-[20px]'>
           <div className='flex-1'>
             <label className='block text-sm kumbh_sans_sami_bold text-gray-700'>
-              Email Address
+              {t('Email Address')}
             </label>
             <input
               type='email'
@@ -44,7 +48,7 @@ const ForgotPassword = () => {
             type='submit'
             className='bg-gradient-to-r w-full poppins_normal_bold cursor-pointer from-orange-400 to-orange-500 text-white px-8 py-[19px] rounded-full shadow hover:from-orange-500 hover:to-orange-600 transition'
           >
-            Submit
+            {t('Submit')}
           </button>
         </form>
       </div>

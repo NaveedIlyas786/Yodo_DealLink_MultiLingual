@@ -22,7 +22,7 @@ import * as LucideIcons from 'lucide-react'
 const TrendingUp = LucideIcons.TrendingUp
 
 import '../../App.css'
-import { useDynamicNamespace } from '@/components/useDynamicNameSpace'
+import { UseDynamicNamespace } from '@/components/UseDynamicNamespace'
 
 const statusColors = {
   Approved: 'bg-green-100 text-green-700',
@@ -38,7 +38,7 @@ const images = [
 ]
 
 const AdminDashboard = () => {
-  const ns = useDynamicNamespace() // ✅ use the namespace from the URL
+  const ns = UseDynamicNamespace() // ✅ use the namespace from the URL
   const { t } = useTranslation([ns, 'static']) // ✅ load both main + fallback
   const currentLang = i18n.language
 

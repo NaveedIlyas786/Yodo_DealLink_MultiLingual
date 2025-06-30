@@ -7,10 +7,10 @@ const Trash2 = LucideIcons.Trash2
 
 import React, { useEffect, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { useDynamicNamespace } from './useDynamicNamespace'
+import { UseDynamicNamespace } from './UseDynamicNamespace'
 
 const ReusableTable = ({ headers, data, statusColors, showActions = true }) => {
-  const ns = useDynamicNamespace() // ✅ use the namespace from the URL
+  const ns = UseDynamicNamespace() // ✅ use the namespace from the URL
   const { t } = useTranslation([ns, 'static']) // ✅ load both main + fallback
   const currentLang = i18n.language
   // console.log('currentLang: ', currentLang)

@@ -4,14 +4,14 @@ import ProfileSettings from '@/components/settingsTab/ProfileSettings'
 import SystemSettings from '@/components/settingsTab/SystemSettings'
 import ChangePassword from '@/components/settingsTab/ChangePassword'
 import { useTranslation } from 'react-i18next'
-import { useDynamicNamespace } from '@/components/useDynamicNameSpace'
+import { UseDynamicNamespace } from '@/components/UseDynamicNamespace'
 import Notifications from '../../components/settingsTab/Notifications'
 import { useNotification } from '@/context/NotificationContext'
 
 const Settings = () => {
   const [activeTab, setActiveTab] = useState('profileSetting')
   const { showNotifications } = useNotification()
-  const ns = useDynamicNamespace()
+  const ns = UseDynamicNamespace()
   const { t } = useTranslation([ns, 'static'])
 
   console.log(showNotifications)

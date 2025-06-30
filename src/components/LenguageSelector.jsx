@@ -1,4 +1,3 @@
-// src/components/LanguageSelector.jsx
 import React, { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import UAEFlagImg from '../assets/uaeFlag.png'
@@ -13,6 +12,22 @@ const LanguageSelector = () => {
     localStorage.setItem('langCode', code)
     setLangCode(code)
   }
+
+  useEffect(() => {
+    const storedLang = localStorage.getItem('langCode')
+
+    if (storedLang) {
+      i18n.changeLanguage(storedLang)
+      setLangCode(storedLang)
+    } else {
+      const systemLang = navigator.language || 'en'
+      console.log('systemLang: ', systemLang)
+      const lang = systemLang.startsWith('ar') ? 'ar' : 'en'
+      i18n.changeLanguage(lang)
+      localStorage.setItem('langCode', lang)
+      setLangCode(lang)
+    }
+  }, [])
 
   useEffect(() => {
     document.body.dir = i18n.language === 'ar' ? 'rtl' : 'ltr'
