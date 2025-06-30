@@ -1,30 +1,47 @@
-// App.jsx or App.js
-import React from 'react'
+import React, { Suspense, lazy } from 'react'
 import { Routes, Route, useLocation } from 'react-router-dom'
-
-import SignUp from './pages/loginSignUp/SignUp'
-import Login from './pages/loginSignUp/Login'
-import ForgotPassword from './pages/loginSignUp/ForgotPassword'
-import NewPasswordCreationPage from './pages/loginSignUp/NewPasswordCreationPage'
-import EmailVerifcationCodePage from './pages/loginSignUp/EmailVerifcationCodePage'
 import './App.css'
+
+// Components (can be loaded eagerly if small)
 import Sidebar from './components/Sidebar'
-import NotFoundPage from './components/NotFoundPage'
-import Settings from './pages/allUserRolesAccess/Settings'
-import PaymentsPage from './pages/allUserRolesAccess/PaymentsPage'
-import CouponsPage from './pages/allUserRolesAccess/CouponsPage'
-import UserOfferPage from './pages/userSection/UserOfferPage'
-import Users from './pages/adminSection/Users'
-import AdminOfferPage from './pages/adminSection/AdminOfferPage'
-import AdminCatgeoryPage from './pages/adminSection/AdminCatgeoryPage'
-import AdminDashboard from './pages/adminSection/AdminDashboard'
-import UserDashboard from './pages/userSection/UserDashboard'
+const NotFoundPage = lazy(() => import('./components/NotFoundPage'))
+
+// Public Pages
+const SignUp = lazy(() => import('./pages/loginSignUp/SignUp'))
+const Login = lazy(() => import('./pages/loginSignUp/Login'))
+const ForgotPassword = lazy(() => import('./pages/loginSignUp/ForgotPassword'))
+const NewPasswordCreationPage = lazy(() =>
+  import('./pages/loginSignUp/NewPasswordCreationPage')
+)
+const EmailVerifcationCodePage = lazy(() =>
+  import('./pages/loginSignUp/EmailVerifcationCodePage')
+)
+
+// Shared User/Admin Pages
+const Settings = lazy(() => import('./pages/allUserRolesAccess/Settings'))
+const PaymentsPage = lazy(() =>
+  import('./pages/allUserRolesAccess/PaymentsPage')
+)
+const CouponsPage = lazy(() => import('./pages/allUserRolesAccess/CouponsPage'))
+
+// Admin Pages
+const AdminDashboard = lazy(() => import('./pages/adminSection/AdminDashboard'))
+const AdminOfferPage = lazy(() => import('./pages/adminSection/AdminOfferPage'))
+const AdminCatgeoryPage = lazy(() =>
+  import('./pages/adminSection/AdminCatgeoryPage')
+)
+const Users = lazy(() => import('./pages/adminSection/Users'))
+
+// User Pages
+const UserDashboard = lazy(() => import('./pages/userSection/UserDashboard'))
+const UserOfferPage = lazy(() => import('./pages/userSection/UserOfferPage'))
 
 export const App = () => {
   const location = useLocation()
-  const role = location.pathname.split('/')[1] // 'admin' or 'user'
+  const role = location.pathname.split('/')[1]
 
   const noSidebarRoutes = [
+    '*',
     '/',
     '/register',
     '/forgotPassword',
@@ -40,39 +57,44 @@ export const App = () => {
         <Sidebar role={role} />
       )}
       <div className='flex-1 overflow-y-auto bg-gray-50 px-[15px]'>
-        <Routes>
-          {/* Public routes */}
-          <Route path='/' element={<Login />} />
-          <Route path='/register' element={<SignUp />} />
-          <Route path='/forgotPassword' element={<ForgotPassword />} />
-          <Route
-            path='/newPasswordCreationPage'
-            element={<NewPasswordCreationPage />}
-          />
-          <Route
-            path='/emailVerifcationCodePage'
-            element={<EmailVerifcationCodePage />}
-          />
+        <Suspense fallback={<div className='p-4'>Loading...</div>}>
+          <Routes>
+            {/* Public routes */}
+            <Route path='/' element={<Login />} />
+            <Route path='/register' element={<SignUp />} />
+            <Route path='/forgotPassword' element={<ForgotPassword />} />
+            <Route
+              path='/newPasswordCreationPage'
+              element={<NewPasswordCreationPage />}
+            />
+            <Route
+              path='/emailVerifcationCodePage'
+              element={<EmailVerifcationCodePage />}
+            />
 
-          {/* Admin routes */}
-          <Route path='/admin/dashboard' element={<AdminDashboard />} />
-          <Route path='/admin/offerPage' element={<AdminOfferPage />} />
-          <Route path='/admin/adminCategory' element={<AdminCatgeoryPage />} />
-          <Route path='/admin/users' element={<Users />} />
-          <Route path='/admin/settings' element={<Settings />} />
-          <Route path='/admin/payments' element={<PaymentsPage />} />
-          <Route path='/admin/Coupons' element={<CouponsPage />} />
+            {/* Admin routes */}
+            <Route path='/admin/dashboard' element={<AdminDashboard />} />
+            <Route path='/admin/offerPage' element={<AdminOfferPage />} />
+            <Route
+              path='/admin/adminCategory'
+              element={<AdminCatgeoryPage />}
+            />
+            <Route path='/admin/users' element={<Users />} />
+            <Route path='/admin/settings' element={<Settings />} />
+            <Route path='/admin/payments' element={<PaymentsPage />} />
+            <Route path='/admin/Coupons' element={<CouponsPage />} />
 
-          {/* User routes */}
-          <Route path='/user/dashboard' element={<UserDashboard />} />
-          <Route path='/user/userOfferPage' element={<UserOfferPage />} />
-          <Route path='/user/settings' element={<Settings />} />
-          <Route path='/user/payments' element={<PaymentsPage />} />
-          <Route path='/user/Coupons' element={<CouponsPage />} />
+            {/* User routes */}
+            <Route path='/user/dashboard' element={<UserDashboard />} />
+            <Route path='/user/userOfferPage' element={<UserOfferPage />} />
+            <Route path='/user/settings' element={<Settings />} />
+            <Route path='/user/payments' element={<PaymentsPage />} />
+            <Route path='/user/Coupons' element={<CouponsPage />} />
 
-          {/* Catch-all */}
-          <Route path='*' element={<NotFoundPage />} />
-        </Routes>
+            {/* Catch-all */}
+            <Route path='*' element={<NotFoundPage />} />
+          </Routes>
+        </Suspense>
       </div>
     </div>
   )

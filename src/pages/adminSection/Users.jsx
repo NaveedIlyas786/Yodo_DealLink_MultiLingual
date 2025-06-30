@@ -10,6 +10,7 @@ import i18n from '@/utils/i18n'
 
 import '../../App.css'
 import { UseDynamicNamespace } from '@/components/UseDynamicNamespace'
+import FilterSidebar from '../../components/dashboardOffers/FilterSidebar'
 
 const statusColors = {
   Approved: 'bg-green-100 text-green-700',
@@ -70,6 +71,32 @@ const Users = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
   }
 
+  const [showFilter, setShowFilter] = useState(false)
+
+  const [filters, setFilters] = useState({
+    role: [],
+    category: [], // optional if you plan to filter by category too
+  })
+
+  // console.log('tableJson: ', tableJson)
+  const applyFilters = () => {
+    let filtered = [...tableJson]
+
+    if (filters.role.length && !filters.role.includes('All')) {
+      filtered = filtered.filter((item) => filters.role.includes(item.role))
+    }
+
+    if (filters.category.length) {
+      filtered = filtered.filter((item) =>
+        filters.category.includes(item.category)
+      )
+    }
+
+    setFilteredItems(filtered.slice(0, itemsPerPage))
+    setCurrentPage(1)
+    setShowFilter(false)
+  }
+
   return (
     <div className='min-h-screen overflow-y-auto flex flex-col flex-1 py-[15px] bg-gray-50'>
       {/* Header */}
@@ -90,7 +117,13 @@ const Users = () => {
                   value={searchVal}
                   onChange={(e) => setSearchVal(e.target.value)}
                 />
-                <Button variant='outline'>{t('Filters')}</Button>
+                <Button
+                  variant='outline'
+                  className='cursor-pointer'
+                  onClick={() => setShowFilter(!showFilter)}
+                >
+                  {t('Filters')}
+                </Button>
               </div>
             </div>
 
@@ -99,6 +132,27 @@ const Users = () => {
               data={filteredItems}
               statusColors={statusColors}
             />
+
+            {showFilter && (
+              <FilterSidebar
+                filters={filters}
+                setFilters={setFilters}
+                applyFilters={applyFilters}
+                closeFilter={() => setShowFilter(false)}
+                filterOptions={[
+                  {
+                    label: 'Role',
+                    key: 'role',
+                    options: ['All', 'Admin', 'Editor', 'Viewer'],
+                  },
+                  // {
+                  //   label: 'Category',
+                  //   key: 'category',
+                  //   options: ['Beauty', 'Food', 'Fitness'],
+                  // },
+                ]}
+              />
+            )}
 
             {/* Pagination Controls */}
             <div className='flex justify-between items-center p-4 border-t text-sm'>

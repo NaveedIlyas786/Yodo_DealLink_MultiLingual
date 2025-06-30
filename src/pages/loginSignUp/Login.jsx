@@ -1,12 +1,70 @@
-import React from 'react'
+import React, { useContext, useEffect } from 'react'
 import loginLeft from '../../assets/loginLeft.png'
 import loginRight from '../../assets/loginRight.png'
 import dealLinkLogo from '../../assets/dealLinkLogo.png'
 import { useTranslation } from 'react-i18next'
 import { UseDynamicNamespace } from '../../components/useDynamicNamespace'
+import { AppContext } from '../../context/AppContext'
+import { z } from 'zod'
+import { zodResolver } from '@hookform/resolvers/zod'
+import { useForm } from 'react-hook-form'
+import axios from 'axios'
+import { useNavigate } from 'react-router-dom'
 const Login = () => {
   const ns = UseDynamicNamespace()
   const { t } = useTranslation([ns, 'static'])
+
+  const { backendUrl, setIsLoggedin } = useContext(AppContext)
+  // console.log('backendUrl: ', backendUrl)
+  const navigate = useNavigate()
+  const schema = z.object({
+    email: z.string().email('Invalid Email'),
+    pass: z.string().min(5, 'Password should at least 5 characters'),
+  })
+
+  const {
+    register,
+    handleSubmit,
+    watch,
+    setError,
+    formState: { errors },
+  } = useForm({
+    resolver: zodResolver(schema),
+  })
+
+  const loginCredential = [
+    {
+      id: 1,
+      email: 'yodoadmin@gmail.com',
+      pass: '123456',
+    },
+    {
+      id: 2,
+      email: 'yodomerchant@gmail.com',
+      pass: '123456',
+    },
+  ]
+  // console.log(watch('phone'))
+  useEffect(() => {
+    localStorage.setItem('loginCredential', JSON.stringify(loginCredential))
+  }, [])
+
+  // const activeUser = JSON.parse(localStorage.getItem('activeUser'))
+  // console.log('activeUser: ', activeUser)
+
+  const handleSubmitLogin = async (data, e) => {
+    e.preventDefault()
+
+    const { email, pass } = data
+
+    if (email === 'yodoadmin@gmail.com' && pass === '123456') {
+      navigate('/admin/dashboard')
+    } else if (email === 'yodomerchant@gmail.com' && pass === '123456') {
+      navigate('/user/dashboard')
+    } else {
+      navigate('*')
+    }
+  }
 
   return (
     <div className='relative min-h-screen  md:px-[49px]  py-[29px] bg-gray-50 flex items-center justify-center '>
@@ -34,16 +92,23 @@ const Login = () => {
           {t('Login to your Account')}
         </h2>
 
-        <form className='flex flex-col gap-[20px]'>
+        <form
+          onSubmit={handleSubmit(handleSubmitLogin)}
+          className='flex flex-col gap-[20px]'
+        >
           <div className='flex-1'>
             <label className='block kumbh_sans_sami_bold  text-[#323232]'>
               {t('Email Address')}
             </label>
             <input
               type='email'
+              {...register('email', { required: true })}
               placeholder='Enter your Email'
               className='w-full mt-1 px-4 Inter_normal py-[19px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
             />
+            {errors.email && (
+              <div style={{ color: 'red' }}>{errors.email.message}</div>
+            )}
           </div>
 
           <div className='flex flex-col md:flex-row gap-[20px]'>
@@ -53,10 +118,14 @@ const Login = () => {
               </label>
               <input
                 type='password'
+                {...register('pass', { required: true })}
                 placeholder='********'
                 autoComplete='current-password' // ✅ Fixes browser autofill warning
                 className='w-full mt-1 px-4 Inter_normal py-[19px] border rounded-full focus:outline-none focus:ring-2 focus:ring-orange-400'
               />
+              {errors.pass && (
+                <div style={{ color: 'red' }}>{errors.pass.message}</div>
+              )}
             </div>
           </div>
 

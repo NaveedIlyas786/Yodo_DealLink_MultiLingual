@@ -33,9 +33,6 @@ const PaymentsPage = () => {
     { key: 'method', label: t('Method') },
   ]
 
-  const navigate = useNavigate()
-  // console.log('Current language table:', t.language)
-
   const [tableJson, setTableJson] = useState([])
 
   useEffect(() => {
@@ -52,7 +49,6 @@ const PaymentsPage = () => {
 
   const start = (currentPage - 1) * itemsPerPage
   const totalPages = Math.ceil(tableJson.length / itemsPerPage)
-
   useEffect(() => {
     setFilteredItems(tableJson)
   }, [])
@@ -66,7 +62,7 @@ const PaymentsPage = () => {
 
   useEffect(() => {
     const searchingItems = tableJson.filter((a) =>
-      `${a.merchant} ${a.offerName}`
+      `${a.status} ${a.paymentId}`
         .toLowerCase()
         .includes(debounceVal.toLowerCase())
     )
@@ -87,7 +83,7 @@ const PaymentsPage = () => {
 
   const [filters, setFilters] = useState({
     status: [],
-    category: [],
+    category: [], // optional if you plan to filter by category too
   })
 
   const applyFilters = () => {
@@ -168,6 +164,19 @@ const PaymentsPage = () => {
                     setFilters={setFilters}
                     applyFilters={applyFilters}
                     closeFilter={() => setShowFilter(false)}
+                    filterOptions={[
+                      {
+                        label: 'status',
+                        key: 'status',
+                        options: [
+                          'All',
+                          'Completed',
+                          'Pending',
+                          'Refunded',
+                          'Failed',
+                        ],
+                      },
+                    ]}
                   />
                 )}
 

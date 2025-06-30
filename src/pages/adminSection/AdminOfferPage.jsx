@@ -84,9 +84,10 @@ const AdminOfferPage = () => {
 
   const [filters, setFilters] = useState({
     status: [],
-    category: [],
+    category: [], // optional if you plan to filter by category too
   })
 
+  console.log('tableJson: ', tableJson)
   const applyFilters = () => {
     let filtered = [...tableJson]
 
@@ -172,6 +173,18 @@ const AdminOfferPage = () => {
                     setFilters={setFilters}
                     applyFilters={applyFilters}
                     closeFilter={() => setShowFilter(false)}
+                    filterOptions={[
+                      {
+                        label: 'status',
+                        key: 'status',
+                        options: ['All', 'Approved', 'Pending', 'Rejected'],
+                      },
+                      {
+                        label: 'Category',
+                        key: 'category',
+                        options: ['Beauty', 'Food', 'Fitness'],
+                      },
+                    ]}
                   />
                 )}
 

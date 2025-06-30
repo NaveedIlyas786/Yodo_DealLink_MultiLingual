@@ -2,6 +2,7 @@
 import React, { useState, useEffect } from 'react'
 import i18n from '../utils/i18n'
 import { App } from '../App'
+import { AppContextProvider } from '../context/AppContext'
 
 const AppWithTranslation = () => {
   const [ready, setReady] = useState(false)
@@ -18,7 +19,11 @@ const AppWithTranslation = () => {
     return <div className='p-10 text-center text-gray-400'>Loading...</div>
   }
 
-  return <App />
+  return (
+    <AppContextProvider>
+      <App />
+    </AppContextProvider>
+  )
 }
 
 export default AppWithTranslation

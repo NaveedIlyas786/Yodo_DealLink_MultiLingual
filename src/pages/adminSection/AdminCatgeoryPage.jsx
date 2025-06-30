@@ -65,7 +65,7 @@ const AdminCatgeoryPage = () => {
 
   useEffect(() => {
     const searchingItems = tableJson.filter((a) =>
-      `${a.merchant} ${a.offerName}`
+      `${a.merchant} ${a.category}`
         .toLowerCase()
         .includes(debounceVal.toLowerCase())
     )
@@ -85,9 +85,10 @@ const AdminCatgeoryPage = () => {
 
   const [filters, setFilters] = useState({
     status: [],
-    category: [],
+    category: [], // optional if you plan to filter by category too
   })
 
+  console.log('tableJson: ', tableJson)
   const applyFilters = () => {
     let filtered = [...tableJson]
 
@@ -175,6 +176,18 @@ const AdminCatgeoryPage = () => {
                     setFilters={setFilters}
                     applyFilters={applyFilters}
                     closeFilter={() => setShowFilter(false)}
+                    filterOptions={[
+                      {
+                        label: 'status',
+                        key: 'status',
+                        options: ['All', 'Approved', 'Pending', 'Rejected'],
+                      },
+                      {
+                        label: 'Category',
+                        key: 'category',
+                        options: ['Beauty', 'Food', 'Fitness'],
+                      },
+                    ]}
                   />
                 )}
 

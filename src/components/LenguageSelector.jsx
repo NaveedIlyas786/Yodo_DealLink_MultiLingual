@@ -21,7 +21,7 @@ const LanguageSelector = () => {
       setLangCode(storedLang)
     } else {
       const systemLang = navigator.language || 'en'
-      console.log('systemLang: ', systemLang)
+      // console.log('systemLang: ', systemLang)
       const lang = systemLang.startsWith('ar') ? 'ar' : 'en'
       i18n.changeLanguage(lang)
       localStorage.setItem('langCode', lang)

@@ -1,12 +1,18 @@
 import React from 'react'
 
-const FilterSidebar = ({ filters, setFilters, applyFilters, closeFilter }) => {
+const FilterSidebar = ({
+  filters,
+  setFilters,
+  applyFilters,
+  closeFilter,
+  filterOptions = [],
+}) => {
   const updateFilter = (type, value) => {
     setFilters((prev) => ({
       ...prev,
-      [type]: prev[type].includes(value)
+      [type]: prev[type]?.includes(value)
         ? prev[type].filter((v) => v !== value)
-        : [...prev[type], value],
+        : [...(prev[type] || []), value],
     }))
   }
 
@@ -17,33 +23,22 @@ const FilterSidebar = ({ filters, setFilters, applyFilters, closeFilter }) => {
         <button onClick={closeFilter}>&times;</button>
       </div>
 
-      <div className='text-sm text-gray-500 mb-1'>Filter By Latest Update</div>
-      {['All', 'Pending', 'Approved', 'Rejected'].map((status) => (
-        <div key={status} className='mb-1'>
-          <label className='inline-flex items-center space-x-2'>
-            <input
-              type='checkbox'
-              className='form-checkbox'
-              checked={filters.status.includes(status)}
-              onChange={() => updateFilter('status', status)}
-            />
-            <span>{status}</span>
-          </label>
-        </div>
-      ))}
-
-      <div className='text-sm text-gray-500 mt-4 mb-1'>Category</div>
-      {['Beauty', 'Food', 'Fitness'].map((category) => (
-        <div key={category} className='mb-1'>
-          <label className='inline-flex items-center space-x-2'>
-            <input
-              type='checkbox'
-              className='form-checkbox'
-              checked={filters.category.includes(category)}
-              onChange={() => updateFilter('category', category)}
-            />
-            <span>{category}</span>
-          </label>
+      {filterOptions.map(({ label, key, options }) => (
+        <div key={key} className='mb-4'>
+          <div className='text-sm text-gray-500 mb-1'>{label}</div>
+          {options.map((option) => (
+            <div key={option} className='mb-1'>
+              <label className='inline-flex items-center space-x-2'>
+                <input
+                  type='checkbox'
+                  className='form-checkbox'
+                  checked={filters[key]?.includes(option) || false}
+                  onChange={() => updateFilter(key, option)}
+                />
+                <span>{option}</span>
+              </label>
+            </div>
+          ))}
         </div>
       ))}
 

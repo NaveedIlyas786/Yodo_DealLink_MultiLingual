@@ -33,9 +33,6 @@ const UserOfferPage = () => {
     { key: 'status', label: t('Status') },
   ]
 
-  const navigate = useNavigate()
-  // console.log('Current language table:', t.language)
-
   const [tableJson, setTableJson] = useState([])
 
   useEffect(() => {
@@ -63,7 +60,7 @@ const UserOfferPage = () => {
     }, 500)
     return () => clearTimeout(interval)
   }, [searchVal])
-
+  // console.log(tableJson)
   useEffect(() => {
     const searchingItems = tableJson.filter((a) =>
       `${a.merchant} ${a.offerName}`
@@ -80,16 +77,13 @@ const UserOfferPage = () => {
   const handlePrev = () => {
     if (currentPage > 1) setCurrentPage(currentPage - 1)
   }
-  const routeTonewOfferCreation = () => {
-    navigate('/offerPage/createnewOffer')
-  }
   // ******************Filtering *****************
 
   const [showFilter, setShowFilter] = useState(false)
 
   const [filters, setFilters] = useState({
     status: [],
-    category: [],
+    category: [], // optional if you plan to filter by category too
   })
 
   const applyFilters = () => {
@@ -177,6 +171,13 @@ const UserOfferPage = () => {
                     setFilters={setFilters}
                     applyFilters={applyFilters}
                     closeFilter={() => setShowFilter(false)}
+                    filterOptions={[
+                      {
+                        label: 'status',
+                        key: 'status',
+                        options: ['All', 'Approved', 'Pending', 'Rejected'],
+                      },
+                    ]}
                   />
                 )}
 

@@ -81,10 +81,9 @@ const UserDashboard = () => {
     }, 500)
     return () => clearTimeout(interval)
   }, [searchVal])
-
   useEffect(() => {
     const searchingItems = tableJson.filter((a) =>
-      `${a.merchant} ${a.offerTitle}`
+      `${a.status} ${a.offerName}`
         .toLowerCase()
         .includes(debounceVal.toLowerCase())
     )

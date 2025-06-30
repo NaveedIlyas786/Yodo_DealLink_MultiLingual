@@ -14,7 +14,7 @@ const Settings = () => {
   const ns = UseDynamicNamespace()
   const { t } = useTranslation([ns, 'static'])
 
-  console.log(showNotifications)
+  // console.log(showNotifications)
   useEffect(() => {
     setActiveTab('profileSetting')
   }, [])

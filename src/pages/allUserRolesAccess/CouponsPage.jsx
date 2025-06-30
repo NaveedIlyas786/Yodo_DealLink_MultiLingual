@@ -43,7 +43,7 @@ const CouponsPage = () => {
   useEffect(() => {
     setTableJson(CouponsData)
   }, [CouponsData])
-  // console.log('tableJson: ', tableJson)
+  console.log('tableJson: ', tableJson)
 
   const [currentPage, setCurrentPage] = useState(1)
   const [searchVal, setSearchVal] = useState('')
@@ -68,7 +68,7 @@ const CouponsPage = () => {
 
   useEffect(() => {
     const searchingItems = tableJson.filter((a) =>
-      `${a.merchant} ${a.offerName}`
+      `${a.status} ${a.couponCode}`
         .toLowerCase()
         .includes(debounceVal.toLowerCase())
     )
@@ -86,12 +86,11 @@ const CouponsPage = () => {
     navigate('/offerPage/createnewOffer')
   }
   // ******************Filtering *****************
-
   const [showFilter, setShowFilter] = useState(false)
 
   const [filters, setFilters] = useState({
     status: [],
-    category: [],
+    category: [], // optional if you plan to filter by category too
   })
 
   const applyFilters = () => {
@@ -172,6 +171,13 @@ const CouponsPage = () => {
                     setFilters={setFilters}
                     applyFilters={applyFilters}
                     closeFilter={() => setShowFilter(false)}
+                    filterOptions={[
+                      {
+                        label: 'status',
+                        key: 'status',
+                        options: ['All', 'Active', 'Expired', 'Used'],
+                      },
+                    ]}
                   />
                 )}
 
