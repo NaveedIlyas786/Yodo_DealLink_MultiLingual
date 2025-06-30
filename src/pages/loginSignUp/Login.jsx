@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import loginLeft from '../../assets/loginLeft.png'
 import loginRight from '../../assets/loginRight.png'
 import dealLinkLogo from '../../assets/dealLinkLogo.png'
@@ -15,6 +15,7 @@ const Login = () => {
   const { t } = useTranslation([ns, 'static'])
 
   const { backendUrl, setIsLoggedin } = useContext(AppContext)
+  const { state, setState } = useState('Sign Up')
   // console.log('backendUrl: ', backendUrl)
   const navigate = useNavigate()
   const schema = z.object({
@@ -63,6 +64,22 @@ const Login = () => {
       navigate('/user/dashboard')
     } else {
       navigate('*')
+    }
+  }
+
+  const OnSubmitHandler = (data, e) => {
+    try {
+      e.preventDefault()
+      axios.defaults.withCredentials = true // it is used to send the cookies-crendtial with the request also
+      const response = axios.post(backendUrl + '/api/auth/login', data)
+      if (response.success) {
+        setIsLoggedin(true)
+        navigate('/')
+      } else {
+        alert(response.message)
+      }
+    } catch (error) {
+      alert(response.message)
     }
   }
 

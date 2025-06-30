@@ -88,7 +88,7 @@ const AdminCatgeoryPage = () => {
     category: [], // optional if you plan to filter by category too
   })
 
-  console.log('tableJson: ', tableJson)
+  // console.log('tableJson: ', tableJson)
   const applyFilters = () => {
     let filtered = [...tableJson]
 

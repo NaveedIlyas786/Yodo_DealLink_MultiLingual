@@ -54,6 +54,22 @@ const SignUp = () => {
     console.log('Ready Data: ', data)
   }
 
+  const OnSubmitHandler = (data, e) => {
+    try {
+      e.preventDefault()
+      axios.defaults.withCredentials = true // it is used to send the cookies-crendtial with the request also
+      const response = axios.post(backendUrl + '/api/auth/register', data)
+      if (response.success) {
+        setIsLoggedin(true)
+        navigate('/')
+      } else {
+        alert(response.message)
+      }
+    } catch (error) {
+      alert(response.message)
+    }
+  }
+
   return (
     <div className='relative min-h-screen  md:px-[49px]  py-[29px] bg-gray-50 flex items-center justify-center '>
       {/* Left Background Image */}

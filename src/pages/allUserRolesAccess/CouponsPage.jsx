@@ -43,7 +43,7 @@ const CouponsPage = () => {
   useEffect(() => {
     setTableJson(CouponsData)
   }, [CouponsData])
-  console.log('tableJson: ', tableJson)
+  // console.log('tableJson: ', tableJson)
 
   const [currentPage, setCurrentPage] = useState(1)
   const [searchVal, setSearchVal] = useState('')
